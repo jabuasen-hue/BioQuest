@@ -1,9 +1,7 @@
 quizMenu = ("\n================ QUIZ ==============="
     "\n-------------------------------------"
     "\n| 1. Identification                 |"
-    "\n| 2. True or False                  |"
-    "\n| 3. True or False (Modified)       |"
-    "\n| 4. Multiple Choice                |"
+    "\n| 2. Multiple Choice                |"
     "\n-------------------------------------")
     
 difficultyMenu = ("\n============= DIFFICULTY ============"
@@ -11,7 +9,6 @@ difficultyMenu = ("\n============= DIFFICULTY ============"
     "\n| 1. Easy                           |"
     "\n| 2. Medium                         |"
     "\n| 3. Hard                           |"
-    "\n| 2. Difficult                      |"
     "\n-------------------------------------")
 
 def mainMenu():
