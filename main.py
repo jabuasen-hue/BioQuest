@@ -17,9 +17,10 @@ def mainMenu():
         print("||             MAIN MENU             ||")
         print("---------------------------------------")
         print("| 1. Play                             |")
-        print("| 2. Achievements                     |")
-        print("| 3. Credits                          |")
-        print("| 4. Quit                             |")
+        print("| 2. Instructions                     |")
+        print("| 3. Achievements                     |")
+        print("| 4. Credits                          |")
+        print("| 5. Quit                             |")
         print("---------------------------------------")
         menuChoice = input("| What would you like to do? (1-4): ")
         while menuChoice not in ["1", "2", "3", "4"]:
@@ -29,8 +30,10 @@ def mainMenu():
         if menuChoice == "1":
             playOption()
         elif menuChoice == "2":
-            achievementsOption()
+            instructionsOption()
         elif menuChoice == "3":
+            achievementsOption()
+        elif menuChoice == "4":
             creditsOption()
         else:
             break
@@ -53,7 +56,11 @@ def playOption():
         if quarterChoice == "1" or "2" or "3" or "4":                          
             print("Uh oh! That isn't available yet! This will be added soon :D")
             break               
-        
+
+def instructionsOption():
+    print("\n ============= INSTRUCTIONS ============")
+    print("BioQuest is a progr")
+
 def achievementsOption():
     print("Uh oh! That isn't available yet! This will be added soon :D")
     
