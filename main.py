@@ -5,11 +5,11 @@ quizMenu = ("\n================ QUIZ ==============="
     "\n-------------------------------------")
     
 difficultyMenu = ("\n============= DIFFICULTY ============"
-    "\n-------------------------------------"
-    "\n| 1. Easy                           |"
-    "\n| 2. Medium                         |"
-    "\n| 3. Hard                           |"
-    "\n-------------------------------------")
+    "-------------------------------------"
+    "| 1. Easy                           |"
+    "| 2. Medium                         |"
+    "| 3. Hard                           |"
+    "-------------------------------------")
 
 def mainMenu():
     while True:
@@ -41,25 +41,23 @@ def mainMenu():
 def playOption():
     while True:
         print("\n =============== PLAY ==============")
-        print("|               TOPICS              |")
         print("-------------------------------------")
-        print("| 1. First Quarter                  |")
-        print("| 2. Second Quarter                 |")
-        print("| 3. Third Quarter                  |")
-        print("| 4. Fourth Quarter                 |")
+        print("| 1. Identification                 |")
+        print("| 2. Multiple Choice                |")
         print("-------------------------------------")
-        quarterChoice = input("| Which quarter will you study/review? (1-4): ")
-        while quarterChoice not in ["1", "2", "3", "4"]:
+        quizChoice = input("| Which quiz type will you use? (1 or 2): ")
+        while quizChoice not in ["1", "2"]:
             print("\n Please Enter a valid answer \n")
             break
     
-        if quarterChoice == "1" or "2" or "3" or "4":                          
-            print("Uh oh! That isn't available yet! This will be added soon :D")
-            break               
+        if quizChoice == "1":                          
+            print("")               
+        else:
+            print("")
 
 def instructionsOption():
     print("\n ============= INSTRUCTIONS ============")
-    print("BioQuest is a progr")
+    print("BioQuest is a program that aims to make Biology fun ! ...")
 
 def achievementsOption():
     print("Uh oh! That isn't available yet! This will be added soon :D")
