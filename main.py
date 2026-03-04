@@ -42,10 +42,24 @@ def playOption():
     while True:
         print("\n =============== PLAY ==============")
         print("-------------------------------------")
+        print("| 1. Georgina                       |")
+        print("| 2. Julien                         |")
+        print("-------------------------------------")
+        quizChoice = input("| Who will be your tutor for today? (1 or 2): ")
+        while tutorChoice not in ["1", "2"]:
+            print("\n Please Enter a valid answer \n")
+            break
+    
+            if tutorChoice == "1":                          
+                print("")               
+            else:
+                print("")
+                
+        print("-------------------------------------")
         print("| 1. Identification                 |")
         print("| 2. Multiple Choice                |")
         print("-------------------------------------")
-        quizChoice = input("| Which quiz type will you use? (1 or 2): ")
+        quizChoice = input("| What quiz type do you want? (1 or 2): ")
         while quizChoice not in ["1", "2"]:
             print("\n Please Enter a valid answer \n")
             break
@@ -54,6 +68,7 @@ def playOption():
             print("")               
         else:
             print("")
+
 
 def instructionsOption():
     print("\n ============= INSTRUCTIONS ============")
