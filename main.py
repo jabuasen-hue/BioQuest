@@ -1,25 +1,37 @@
+import time
+
 difficultyMenu = ("-------------------------------------"
-    "| 1. Easy                           |"
-    "| 2. Medium                         |"
-    "| 3. Hard                           |"
-    "-------------------------------------")
+                  "| 1. Easy                           |"
+                  "| 2. Medium                         |"
+                  "| 3. Hard                           |"
+                  "-------------------------------------")
+
 
 def mainMenu():
     while True:
         print("=======================================")
+        time.sleep(0.25)
         print("||             MAIN MENU             ||")
+        time.sleep(0.25)
         print("---------------------------------------")
+        time.sleep(0.25)
         print("| 1. Play                             |")
+        time.sleep(0.25)
         print("| 2. Instructions                     |")
+        time.sleep(0.25)
         print("| 3. Achievements                     |")
+        time.sleep(0.25)
         print("| 4. Credits                          |")
+        time.sleep(0.25)
         print("| 5. Quit                             |")
+        time.sleep(0.25)
         print("---------------------------------------")
+        time.sleep(1)
         menuChoice = input("| What would you like to do? (1-4): ")
         while menuChoice not in ["1", "2", "3", "4"]:
             print("\n Please Enter a valid answer \n")
             break
-        
+
         if menuChoice == "1":
             playOption()
         elif menuChoice == "2":
@@ -30,33 +42,21 @@ def mainMenu():
             creditsOption()
         else:
             break
-    
+
+
 def playOption():
     while True:
+        time.sleep(2)
         print("\n =============== PLAY ==============")
-        userName = input(str("Before we begin, what's your preferred name? "
-        print("What a lovely name! You may now choose your tutor:"
-        print("")
+        time.sleep(0.25)
         print("-------------------------------------")
-        print("| Tutor Options:                    |")
-        print("| 1. Georgina                       |")
-        print("| 2. Julien                         |")
-        print("-------------------------------------")
-        tutorChoice = input("| Who will be your tutor for today? (1 or 2): ")
-        while tutorChoice not in ["1", "2"]:
-            print("\n Please Enter a valid answer \n")
-            break
-    
-        if tutorChoice == "1":                          
-            print("")               
-        else:
-            print("")
-                
-        print("-------------------------------------")
-        print("| Quiz Type:                        |")
+        time.sleep(0.25)
         print("| 1. Identification                 |")
+        time.sleep(0.25)
         print("| 2. Multiple Choice                |")
+        time.sleep(0.25)
         print("-------------------------------------")
+        time.sleep(1)
         quizChoice = input("| What quiz type do you want? (1 or 2): ")
         while quizChoice not in ["1", "2"]:
             print("\n Please Enter a valid answer \n")
