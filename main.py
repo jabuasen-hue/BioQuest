@@ -41,6 +41,9 @@ def mainMenu():
 def playOption():
     while True:
         print("\n =============== PLAY ==============")
+        userName = input(str("Before we begin, what's your preferred name? "
+        print("What a lovely name! You may now choose your tutor:"
+        print("")
         print("-------------------------------------")
         print("| Tutor Options:                    |")
         print("| 1. Georgina                       |")
