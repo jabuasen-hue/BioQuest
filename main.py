@@ -42,10 +42,11 @@ def playOption():
     while True:
         print("\n =============== PLAY ==============")
         print("-------------------------------------")
+        print("| Tutor Options:                    |")
         print("| 1. Georgina                       |")
         print("| 2. Julien                         |")
         print("-------------------------------------")
-        quizChoice = input("| Who will be your tutor for today? (1 or 2): ")
+        tutorChoice = input("| Who will be your tutor for today? (1 or 2): ")
         while tutorChoice not in ["1", "2"]:
             print("\n Please Enter a valid answer \n")
             break
@@ -56,6 +57,7 @@ def playOption():
                 print("")
                 
         print("-------------------------------------")
+        print("| Quiz Type:                        |")
         print("| 1. Identification                 |")
         print("| 2. Multiple Choice                |")
         print("-------------------------------------")
@@ -68,6 +70,28 @@ def playOption():
             print("")               
         else:
             print("")
+
+        print("-------------------------------------")
+        print("| Quarter Options:                  |")
+        print("| 1. First Quarter                  |")
+        print("| 2. Second Quarter                 |")
+        print("| 3. Third Quarter                  |")
+        print("| 4. Fourth Quarter                 |")
+        print("-------------------------------------")
+        quarterChoice = input("| What quarter would you like to study? (1-4): ")
+        while quarterChoice not in ["1", "2", "3", "4"]:
+            print("\n Please Enter a valid answer \n")
+            break
+    
+        if quarterChoice == "1":                          
+            print("")               
+        elif quarterChoice == "2":
+            print("")
+        elif quarterChoice == "3":
+            print("")
+        else:
+            print("")
+
 
 
 def instructionsOption():
