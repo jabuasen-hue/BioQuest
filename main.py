@@ -1,11 +1,4 @@
-quizMenu = ("\n================ QUIZ ==============="
-    "\n-------------------------------------"
-    "\n| 1. Identification                 |"
-    "\n| 2. Multiple Choice                |"
-    "\n-------------------------------------")
-    
-difficultyMenu = ("\n============= DIFFICULTY ============"
-    "-------------------------------------"
+difficultyMenu = ("-------------------------------------"
     "| 1. Easy                           |"
     "| 2. Medium                         |"
     "| 3. Hard                           |"
@@ -54,10 +47,10 @@ def playOption():
             print("\n Please Enter a valid answer \n")
             break
     
-            if tutorChoice == "1":                          
-                print("")               
-            else:
-                print("")
+        if tutorChoice == "1":                          
+            print("")               
+        else:
+            print("")
                 
         print("-------------------------------------")
         print("| Quiz Type:                        |")
@@ -99,7 +92,18 @@ def playOption():
 
 def instructionsOption():
     print("\n ============= INSTRUCTIONS ============")
-    print("BioQuest is a program that aims to make Biology fun ! ...")
+    print("BioQuest is a program that aims to make Biology fun ! Whether homework, reviews, or big tests, BioQuest is here to help!")
+    print("\nHow To Play:")
+    print("1. Choose Your Tutor Pick a tutor persona that matches your learning style.")
+    print("2. Select Your Topics Choose from any topic covered during the quarter. Everything—from cells to genetics—appears as a ready-made quiz list.")
+    print("3. Pick a Quiz Mode Different quiz types make learning flexible and fun: Multiple Choice or Identification")
+    print("4. Answer and Explore Take the quiz at your own pace. Tutors will guide you with hints, explanations, and encouragement.")
+    print("5. Track Your Progress! Your results are saved day by day and automatically transferred to Google Sheets, so you can monitor improvements over time.")
+    print("\nEach option on the menu will lead you somewhere, just like how it led you here!")
+    print("Play - Choose this option to begin your quest and start playing!")
+    print("Achievements - Choose this option to look at everything you have accomplished so far.")
+    print("Credits - Choose this option to look at the people who have contributed to the making of this program.")
+    print("Quit - Choose this option to exit the program.\n")
 
 def achievementsOption():
     print("Uh oh! That isn't available yet! This will be added soon :D")
