@@ -1,10 +1,13 @@
 import time
 
-difficultyMenu = ("-------------------------------------"
-                  "| 1. Easy                           |"
-                  "| 2. Medium                         |"
-                  "| 3. Hard                           |"
-                  "-------------------------------------")
+def diffMenu() =  print("-------------------------------------")
+            print("| Difficulty Options:               |")
+            print("| 1. Easy                           |")
+            print("| 2. Medium                         |")
+            print("| 3. Hard                           |")
+            print("-------------------------------------")
+            diffChoice = input("| What difficulty would you like to answer? (1-3): ")
+            return diffChoice
 
 
 def mainMenu():
@@ -63,30 +66,124 @@ def playOption():
             break
     
         if quizChoice == "1":                          
-            print("")               
+            quarterOptionIdentif()              
         else:
-            print("")
+            quarterOptionMultiple()
 
-        print("-------------------------------------")
-        print("| Quarter Options:                  |")
-        print("| 1. First Quarter                  |")
-        print("| 2. Second Quarter                 |")
-        print("| 3. Third Quarter                  |")
-        print("| 4. Fourth Quarter                 |")
-        print("-------------------------------------")
-        quarterChoice = input("| What quarter would you like to study? (1-4): ")
-        while quarterChoice not in ["1", "2", "3", "4"]:
-            print("\n Please Enter a valid answer \n")
-            break
-    
-        if quarterChoice == "1":                          
-            print("")               
-        elif quarterChoice == "2":
-            print("")
-        elif quarterChoice == "3":
-            print("")
-        else:
-            print("")
+        def quarterOptionIdentif():
+          print("-------------------------------------")
+          print("| Quarter Options:                  |")
+          print("| 1. First Quarter                  |")
+          print("| 2. Second Quarter                 |")
+          print("| 3. Third Quarter                  |")
+          print("| 4. Fourth Quarter                 |")
+          print("-------------------------------------")
+          quarterChoice = input("| What quarter would you like to study? (1-4): ")
+          while quarterChoice not in ["1", "2", "3", "4"]:
+              print("\n Please Enter a valid answer \n")
+              break
+      
+          if quarterChoice == "1":                          
+              identifOne()             
+          elif quarterChoice == "2":
+              print("")
+          elif quarterChoice == "3":
+              print("")
+          else:
+              print("")
+
+          def identifOne():
+            diffMenu()
+            while quarterChoice not in ["1", "2", "3"]:
+                print("\n Please Enter a valid answer \n")
+                break
+        
+              if diffChoice == "1":                          
+                print("")               
+              elif diffChoice == "2":
+                print("")
+              else:
+                print("")
+
+          def identifTwo():
+            print("-------------------------------------")
+            print("| Difficulty Options:               |")
+            print("| 1. Easy                           |")
+            print("| 2. Medium                         |")
+            print("| 3. Hard                           |")
+            print("-------------------------------------")
+            diffChoice = input("| What difficulty would you like to answer? (1-3): ")
+            while quarterChoice not in ["1", "2", "3"]:
+              print("\n Please Enter a valid answer \n")
+              break
+          
+              if diffChoice == "1":                          
+                print("")               
+              elif diffChoice == "2":
+                print("")
+              else:
+                print("")
+          def identifThree():
+            print("-------------------------------------")
+            print("| Difficulty Options:               |")
+            print("| 1. Easy                           |")
+            print("| 2. Medium                         |")
+            print("| 3. Hard                           |")
+            print("-------------------------------------")
+            diffChoice = input("| What difficulty would you like to answer? (1-3): ")
+            while quarterChoice not in ["1", "2", "3"]:
+              print("\n Please Enter a valid answer \n")
+              break
+          
+              if diffChoice == "1":                          
+                print("")               
+              elif diffChoice == "2":
+                print("")
+              else:
+                print("")
+                
+          def identifFour():
+            print("-------------------------------------")
+            print("| Difficulty Options:               |")
+            print("| 1. Easy                           |")
+            print("| 2. Medium                         |")
+            print("| 3. Hard                           |")
+            print("-------------------------------------")
+            diffChoice = input("| What difficulty would you like to answer? (1-3): ")
+            while quarterChoice not in ["1", "2", "3"]:
+              print("\n Please Enter a valid answer \n")
+              break
+          
+              if diffChoice == "1":                          
+                print("")               
+              elif diffChoice == "2":
+                print("")
+              else:
+                print("")
+
+        def quarterOptionMultiple():
+          print("-------------------------------------")
+          print("| Quarter Options:                  |")
+          print("| 1. First Quarter                  |")
+          print("| 2. Second Quarter                 |")
+          print("| 3. Third Quarter                  |")
+          print("| 4. Fourth Quarter                 |")
+          print("-------------------------------------")
+          quarterChoice = input("| What quarter would you like to study? (1-4): ")
+          while quarterChoice not in ["1", "2", "3", "4"]:
+              print("\n Please Enter a valid answer \n")
+              break
+      
+          if quarterChoice == "1":                          
+              print("")               
+          elif quarterChoice == "2":
+              print("")
+          elif quarterChoice == "3":
+              print("")
+          else:
+              print("")
+          
+          
 
 
 
