@@ -30,7 +30,7 @@ try:
         time.sleep(0.25)
         print("-------------------------------------")
         time.sleep(1)
-        diffChoice = input("| What difficulty would you like to answer? (1-3): ")
+        diffChoice = input("| What difficulty would you like to answer? (1-3): \n")
         return diffChoice
 
 
@@ -49,7 +49,7 @@ try:
         time.sleep(0.25)
         print("-------------------------------------")
         time.sleep(1)
-        quarterChoice = input("| What quarter would you like to study? (1-4): ")
+        quarterChoice = int(input("| What quarter would you like to study? (1-4): "))
         return quarterChoice
 
 
@@ -76,7 +76,7 @@ try:
             menuChoice = input("| What would you like to do? (1-4): ")
             while menuChoice not in ["1", "2", "3", "4"]:
                 menuChoice = input("\n Please Enter a valid answer \n")
-                break
+
 
             if menuChoice == "1":
                 playOption()
@@ -106,7 +106,6 @@ try:
             quizChoice = input("| What quiz type do you want? (1 or 2): ")
             while quizChoice not in ["1", "2"]:
                 quizChoice = input("\n Please Enter a valid answer \n")
-                break
 
             if quizChoice == "1":
                 quarterOptionIdentif()
@@ -118,7 +117,6 @@ try:
         quarterChoice = quarterMenu()
         while quarterChoice not in ["1", "2", "3", "4"]:
             quarterChoice = input("\n Please Enter a valid answer \n")
-            break
 
         if quarterChoice == "1":
             print("")
@@ -134,24 +132,21 @@ try:
 
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
-        while quarterChoice not in ["1", "2", "3", "4"]:
-            quarterChoice = input("\n Please Enter a valid answer \n")
-            break
+        while quarterChoice not in [1, 2, 3, 4]:
+            quarterChoice = input("| Please Enter a valid answer: \n")
 
-        if quarterChoice == "1":
+        if quarterChoice == 1:
             print("")
-        elif quarterChoice == "2":
+        elif quarterChoice == 2:
             print("")
-        elif quarterChoice == "3":
+        elif quarterChoice == 3:
             print("")
         else:
             print("")
 
         diffChoice = diffMenu()
-
         if diffChoice == "1":
             questions = easyMP
-
         elif diffChoice == "2":
             questions = medMP
         else:
@@ -160,11 +155,14 @@ try:
         for q in questions:
             if q["quarter"] == quarterChoice:
                 a = input(q["question"])
+                time.sleep(0.5)
                 if a == q["answer"]:
                     print("joosy")
                 else:
                     print("aww")
+                    time.sleep(1)
                 print(q["explanation"])
+                time.sleep(1.5)
                 input("\nPress Enter to proceed to next question")
 
     def instructionsOption():
