@@ -18,64 +18,64 @@ try:
 
 
     def diffMenu():
-        print("\n-------------------------------------")
+        print(" " * 92, "\n-------------------------------------")
         time.sleep(0.25)
-        print("| Difficulty Options:               |")
+        print(" " * 92, "| Difficulty Options:               |")
         time.sleep(0.25)
-        print("| 1. Easy                           |")
+        print(" " * 92, "| 1. Easy                           |")
         time.sleep(0.25)
-        print("| 2. Medium                         |")
+        print(" " * 92, "| 2. Medium                         |")
         time.sleep(0.25)
-        print("| 3. Hard                           |")
+        print(" " * 92, "| 3. Hard                           |")
         time.sleep(0.25)
-        print("-------------------------------------")
+        print(" " * 92, "-------------------------------------")
         time.sleep(1)
-        diffChoice = input("| What difficulty would you like to answer? (1-3): \n")
+        diffChoice = input("| What difficulty would you like to answer? (1-3): \n").strip()
         return diffChoice
 
 
     def quarterMenu():
-        print("\n-------------------------------------")
+        print(" " * 92, "\n-------------------------------------")
         time.sleep(0.25)
-        print("| Quarter Options:                  |")
+        print(" " * 92, "| Quarter Options:                  |")
         time.sleep(0.25)
-        print("| 1. First Quarter                  |")
+        print(" " * 92, "| 1. First Quarter                  |")
         time.sleep(0.25)
-        print("| 2. Second Quarter                 |")
+        print(" " * 92, "| 2. Second Quarter                 |")
         time.sleep(0.25)
-        print("| 3. Third Quarter                  |")
+        print(" " * 92, "| 3. Third Quarter                  |")
         time.sleep(0.25)
-        print("| 4. Fourth Quarter                 |")
+        print(" " * 92, "| 4. Fourth Quarter                 |")
         time.sleep(0.25)
-        print("-------------------------------------")
+        print(" " * 92, "-------------------------------------")
         time.sleep(1)
-        quarterChoice = int(input("| What quarter would you like to study? (1-4): "))
+        quarterChoice = int(input("| What quarter would you like to study? (1-4): ").strip())
         return quarterChoice
 
 
     def mainMenu():
         while True:
-            print("=======================================")
+            print(" " * 91, "=======================================")
             time.sleep(0.25)
-            print("||             MAIN MENU             ||")
+            print(" " * 91, "||             MAIN MENU             ||")
             time.sleep(0.25)
-            print("---------------------------------------")
+            print(" " * 91, "---------------------------------------")
             time.sleep(0.25)
-            print("| 1. Play                             |")
+            print(" " * 91, "| 1. Play                             |")
             time.sleep(0.25)
-            print("| 2. Instructions                     |")
+            print(" " * 91, "| 2. Instructions                     |")
             time.sleep(0.25)
-            print("| 3. Achievements                     |")
+            print(" " * 91, "| 3. Achievements                     |")
             time.sleep(0.25)
-            print("| 4. Credits                          |")
+            print(" " * 91, "| 4. Credits                          |")
             time.sleep(0.25)
-            print("| 5. Quit                             |")
+            print(" " * 91, "| 5. Quit                             |")
             time.sleep(0.25)
-            print("---------------------------------------")
+            print(" " * 91, "---------------------------------------")
             time.sleep(1)
-            menuChoice = input("| What would you like to do? (1-4): ")
+            menuChoice = input("| What would you like to do? (1-4): ").strip()
             while menuChoice not in ["1", "2", "3", "4"]:
-                menuChoice = input("\n Please Enter a valid answer \n")
+                menuChoice = input("\n Please Enter a valid answer \n").strip()
 
 
             if menuChoice == "1":
@@ -93,19 +93,19 @@ try:
     def playOption():
         while True:
             time.sleep(2)
-            print("\n =============== PLAY ==============")
+            print(" " * 92, "\n =============== PLAY ==============")
             time.sleep(0.25)
-            print("-------------------------------------")
+            print(" " * 92, "-------------------------------------")
             time.sleep(0.25)
-            print("| 1. Identification                 |")
+            print(" " * 92, "| 1. Identification                 |")
             time.sleep(0.25)
-            print("| 2. Multiple Choice                |")
+            print(" " * 92, "| 2. Multiple Choice                |")
             time.sleep(0.25)
-            print("-------------------------------------")
+            print(" " * 92, "-------------------------------------")
             time.sleep(1)
-            quizChoice = input("| What quiz type do you want? (1 or 2): ")
+            quizChoice = input("| What quiz type do you want? (1 or 2): ").strip()
             while quizChoice not in ["1", "2"]:
-                quizChoice = input("\n Please Enter a valid answer \n")
+                quizChoice = input("\n Please Enter a valid answer \n").strip()
 
             if quizChoice == "1":
                 quarterOptionIdentif()
@@ -116,7 +116,7 @@ try:
     def quarterOptionIdentif():
         quarterChoice = quarterMenu()
         while quarterChoice not in ["1", "2", "3", "4"]:
-            quarterChoice = input("\n Please Enter a valid answer \n")
+            quarterChoice = input("\n Please Enter a valid answer \n").strip()
 
         if quarterChoice == "1":
             print("")
@@ -133,7 +133,7 @@ try:
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
         while quarterChoice not in [1, 2, 3, 4]:
-            quarterChoice = input("| Please Enter a valid answer: \n")
+            quarterChoice = input("| Please Enter a valid answer: \n").strip()
 
         if quarterChoice == 1:
             print("")
@@ -154,7 +154,7 @@ try:
             
         for q in questions:
             if q["quarter"] == quarterChoice:
-                a = input(q["question"])
+                a = input(q["question"]).upper().strip()
                 time.sleep(0.5)
                 if a == q["answer"]:
                     print("joosy")
