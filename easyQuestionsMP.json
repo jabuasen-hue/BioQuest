@@ -33,7 +33,7 @@
         "diffNumber": 4,
         "question": "------ are single-celled organisms from the domains Bacteria and Archaea that lack a nucleus and membrane-bound organelles.",
         "options":"A) Eukaryotes\nB) Insecaryotes\nC) Prokaryotes\nD) Dinidiums",
-        "answer": "",
+        "answer": "A",
     },
     {
         "quarter": 1,
@@ -78,7 +78,7 @@
         "diffNumber": 9,
         "question": "___________ is the overarching theme of biology, explaining both the unity and diversity of life, with natural selection as the driving force for adaptation and change.",
         "options":"A) Evolution\nB) Organization\nC) Energy and Matter\nD) Interaction",
-        "answer": "",
+        "answer": "A",
     },
     {
         "quarter": 1,
