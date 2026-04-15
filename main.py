@@ -3,17 +3,11 @@ import json
 
 try:
     # READING from the file
-    filename = "easyQuestionsMP.json"
-    with open(filename, 'r') as file:
+    with open("easyQuestionsMP.json", 'r', encoding="utf-8") as file:
         # Load the JSON data from the file
         easyMP = json.load(file)
 
-    filename = "mediumQuestionsMP.json"
-    with open(filename, 'r') as file:
-        medMP = json.load(file)
-
-    filename = "hardQuestionsMP.json"
-    with open(filename, 'r') as file:
+    with open("hardQuestionsMP.json", 'r', encoding="utf-8") as file:
         hardMP = json.load(file)
 
 
@@ -24,20 +18,16 @@ try:
         time.sleep(0.25)
         print(" " * 92, "| 1. Easy                           |")
         time.sleep(0.25)
-        print(" " * 92, "| 2. Medium                         |")
-        time.sleep(0.25)
-        print(" " * 92, "| 3. Hard                           |")
+        print(" " * 92, "| 2. Hard                           |")
         time.sleep(0.25)
         print(" " * 92, "-------------------------------------")
         time.sleep(1)
-        diffChoice = input("| What difficulty would you like to answer? (1-3): \n").strip()
+        diffChoice = input("| What difficulty would you like to answer? (1 or 2): ").strip()
         return diffChoice
 
 
     def quarterMenu():
         print(" " * 92, "-------------------------------------")
-        time.sleep(0.25)
-        print(" " * 92, "| Quarter Options:                  |")
         time.sleep(0.25)
         print(" " * 92, "| 1. First Quarter                  |")
         time.sleep(0.25)
@@ -75,7 +65,7 @@ try:
             time.sleep(1)
             menuChoice = input("| What would you like to do? (1-5): ").strip()
             while menuChoice not in ["1", "2", "3", "4", "5"]:
-                menuChoice = input("\n Please Enter a valid answer \n").strip()
+                menuChoice = input("\n Please Enter a valid answer: ").strip()
 
 
             if menuChoice == "1":
@@ -92,8 +82,9 @@ try:
 
     def playOption():
         while True:
-            time.sleep(2)
-            print(" " * 92, " =============== PLAY ==============")
+            time.sleep(1)
+            print()
+            print(" " * 92, "================ PLAY ===============")
             time.sleep(0.25)
             print(" " * 92, "-------------------------------------")
             time.sleep(0.25)
@@ -105,7 +96,7 @@ try:
             time.sleep(1)
             quizChoice = input("| What quiz type do you want? (1 or 2): ").strip()
             while quizChoice not in ["1", "2"]:
-                quizChoice = input("\n Please Enter a valid answer \n").strip()
+                quizChoice = input("\n Please Enter a valid answer ").strip()
 
             if quizChoice == "1":
                 quarterOptionIdentif()
@@ -116,7 +107,7 @@ try:
     def quarterOptionIdentif():
         quarterChoice = quarterMenu()
         while quarterChoice not in ["1", "2", "3", "4"]:
-            quarterChoice = input("\n Please Enter a valid answer \n").strip()
+            quarterChoice = input("\n Please Enter a valid answer ").strip()
 
         if quarterChoice == "1":
             print("")
@@ -133,7 +124,7 @@ try:
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
         while quarterChoice not in [1, 2, 3, 4]:
-            quarterChoice = input("| Please Enter a valid answer: \n").strip()
+            quarterChoice = input("| Please Enter a valid answer: ").strip()
 
         if quarterChoice == 1:
             print("")
@@ -147,21 +138,23 @@ try:
         diffChoice = diffMenu()
         if diffChoice == "1":
             questions = easyMP
-        elif diffChoice == "2":
-            questions = medMP
         else:
             questions = hardMP
             
         for q in questions:
             if q["quarter"] == quarterChoice:
-                a = input(q["question"]).upper().strip()
+                print()
+                print("-" * 221)
+                print(q['question'])
                 time.sleep(0.5)
+                print(q['options'])
+                time.sleep(0.5)
+                a = input("| What is your answer?: ")
                 if a == q["answer"]:
                     print("joosy")
                 else:
                     print("aww")
-                    time.sleep(1)
-                print(q["explanation"])
+                    print(f"| The correct answer is: {q['answer']}")
                 time.sleep(1.5)
                 input("\nPress Enter to proceed to next question")
 

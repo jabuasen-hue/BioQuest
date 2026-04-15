@@ -6,7 +6,7 @@
         "diffNumber": 1,
         "question": "What branch of biology studies microorganisms like bacteria, viruses, and fungi?",
         "options":"A) Cytology\nB) Microbiology\nC) Molecular Biology\nD) Immunology",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 1,
@@ -15,7 +15,7 @@
         "diffNumber": 2,
         "question": "What is the biological process by which organisms maintain a stable, balanced internal environment despite changing external conditions?",
         "options":"A) Adaptation\nB) Reproduction\nC) Homeostasis\nD) Homogenous",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 1,
@@ -24,7 +24,7 @@
         "diffNumber": 3,
         "question": "What do you call the passing on of physical or mental characteristics genetically from one generation to another?",
         "options":"A) Heredity\nB) Inheritance\nC) Adaptation\nD) Development",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 1,
@@ -33,7 +33,7 @@
         "diffNumber": 4,
         "question": "------ are single-celled organisms from the domains Bacteria and Archaea that lack a nucleus and membrane-bound organelles.",
         "options":"A) Eukaryotes\nB) Insecaryotes\nC) Prokaryotes\nD) Dinidiums",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 1,
@@ -42,7 +42,7 @@
         "diffNumber": 5,
         "question": "What is the most complex hierarchical level of living systems?",
         "options":"A) Ecosystem\nB) Biosphere\nC) Community\nD) Population",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 1,
@@ -51,7 +51,7 @@
         "diffNumber": 6,
         "question": "Which level of biological organization is being described? \nA group of Philippine tarsiers in Bohol stays hidden among dense foliage during the day to avoid predators.",
         "options":"A) Biosphere\nB) Organelle\nC) Community\nD) Population",
-        "answer": "D",
+        "answer": "D"
     },
     {
         "quarter": 1,
@@ -60,7 +60,7 @@
         "diffNumber": 7,
         "question": "Energy moves in ------ direction through an ecosystem, from the sun to producers (such as plants) and then to consumers (such as animals).",
         "options":"A) Straight\nB) Circular\nC) One\nD) Two",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 1,
@@ -69,7 +69,7 @@
         "diffNumber": 8,
         "question": "The process of converting food (sugar) into energy (in the form of ATP) is called _____________.",
         "options":"A) Photosynthesis\nB) Cellular Respiration\nC) Transformation\nD) Conversion",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 1,
@@ -78,7 +78,7 @@
         "diffNumber": 9,
         "question": "___________ is the overarching theme of biology, explaining both the unity and diversity of life, with natural selection as the driving force for adaptation and change.",
         "options":"A) Evolution\nB) Organization\nC) Energy and Matter\nD) Interaction",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 1,
@@ -87,7 +87,7 @@
         "diffNumber": 10,
         "question": "Biology has ________ unifying themes",
         "options":"A) Ten\nB) Four\nC) Five\nD) Six",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 2,
@@ -96,7 +96,7 @@
         "diffNumber": 1,
         "question": "_________ is the science of naming, describing, and classifying organisms that reflect their similarities and differences.",
         "options":"A) Taxation\nB) Nameology\nC) Taxonomy\nD) Phylogeny",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 2,
@@ -105,7 +105,7 @@
         "diffNumber": 2,
         "question": "A ___________ tree is like a family tree for species. It is a diagram that illustrates the evolutionary relationships between organisms.",
         "options":"A) Archaeological\nB) Phylogenetic\nC) Maple\nD) Family",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 2,
@@ -114,7 +114,7 @@
         "diffNumber": 3,
         "question": "Organisms evolve ______ that allow them to survive in their specific ecological niches.",
         "options":"A) Abilities\nB) Superpowers\nC) Traits\nD) Limbs",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 2,
@@ -123,7 +123,7 @@
         "diffNumber": 4,
         "question": "A characteristic passed from parents to offspring via genes.",
         "options":"A) Acquired trait\nB) Inherited trait\nC) Adapted trait\nD) Given trait",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 2,
@@ -132,7 +132,7 @@
         "diffNumber": 5,
         "question": "Differences among individuals in a population.",
         "options":"A) Diversity\nB) Changes\nC) Variation\nD) Divergence",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 2,
@@ -141,7 +141,7 @@
         "diffNumber": 6,
         "question": "Random changes in gene frequencies in small populations.",
         "options":"A) Genetic Drift\nB) Variation\nC) Random Drift\nD) Population Drift",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 2,
@@ -150,7 +150,7 @@
         "diffNumber": 7,
         "question": "A population of a single species splits into two species due to the presence of geographical barrier(s) that separate the two groups and impede interbreeding and the production of fertile, viable offspring.",
         "options":"A) Sympatric Speciation \nB) Sympathetic Speciation\nC) Allele Speciation\nD) Allopatric Speciation",
-        "answer": "D",
+        "answer": "D"
     },
     {
         "quarter": 2,
@@ -159,7 +159,7 @@
         "diffNumber": 8,
         "question": "The transfer of alleles between populations through migration or interbreeding. Gene flow can introduce new genetic material, enhancing genetic diversity.",
         "options":"A) Free Flow\nB) Gene Flow\nC) Flow G\nD) Go with the flow",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 2,
@@ -168,7 +168,7 @@
         "diffNumber": 9,
         "question": "Allopatric speciation occurs due to the presence of a ______________ barrier and isolation.",
         "options":"A) Geographical\nB) Physiological\nC) Analytical\nD) Intellectual",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 2,
@@ -177,7 +177,7 @@
         "diffNumber": 10,
         "question": "The process by which individuals with advantageous traits are more likely to survive and reproduce, and pass on those advantageous traits to the next generation.",
         "options":"A) Natural Examination\nB) Sorting\nC) Fate\nD) Natural Selection",
-        "answer": "",
+        "answer": ""
     },
     {
         "quarter": 3,
@@ -186,7 +186,7 @@
         "diffNumber": 1,
         "question": "______________ are laboratory tools used to view small objects normally invisible to the naked eye.",
         "options":"A) Micrometers\nB) Microscopes\nC) Telescopes\nD) Binoculars",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 3,
@@ -195,7 +195,7 @@
         "diffNumber": 2,
         "question": "A ___________ gives the person doing the dissection a magnified view of the specimen with a 3-dimensional perspective.",
         "options":"A) Stereohearts\nB) Colonoscope\nC) Stereoscope\nD) Electron Microscope",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 3,
@@ -204,7 +204,7 @@
         "diffNumber": 3,
         "question": "The _______ is the structural and functional unit of life.",
         "options":"A) Cellphone\nB) Cell\nC) Mitochondria\nD) ATP",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 3,
@@ -213,7 +213,7 @@
         "diffNumber": 4,
         "question": "All cells come from __________ ___________.",
         "options":"A) the air\nB) outer space\nC) non-existent cells\nD) pre-existing cells",
-        "answer": "D",
+        "answer": "D"
     },
     {
         "quarter": 3,
@@ -222,7 +222,7 @@
         "diffNumber": 5,
         "question": "Who coined the term “cell”?",
         "options":"A) Captain Hooke\nB) Theodore Schwann\nC) Robert Hooke\nD) Matthias Schleiden",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 3,
@@ -231,7 +231,7 @@
         "diffNumber": 6,
         "question": "According to the _______ theory, microorganisms are the cause of many diseases.",
         "options":"A) Germ\nB) Cell\nC) Virus\nD) Organelle",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 3,
@@ -240,7 +240,7 @@
         "diffNumber": 7,
         "question": "__________ transport moves molecules without the use of energy (ATP)",
         "options":"A) Aggressive\nB) Active\nC) Passive\nD) Dormant",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 3,
@@ -249,7 +249,7 @@
         "diffNumber": 8,
         "question": "_________ Transport requires ATP to move molecules against their concentration gradient",
         "options":"A) Passive\nB) Aggressive\nC) Active\nD) Dormant",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 3,
@@ -258,7 +258,7 @@
         "diffNumber": 9,
         "question": "The _______ domain includes plants, animals, fungi, and protists.",
         "options":"A) Encantadia\nB) Prokarya\nC) Eukarya\nD) Archaea",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 3,
@@ -267,7 +267,7 @@
         "diffNumber": 10,
         "question": "In _________ solutions, water enters the cell because the outside solution has fewer solutes. ",
         "options":"A) Hyperactive\nB) Hypotonic\nC) Isotonic\nD) Hypertonic",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 4,
@@ -276,7 +276,7 @@
         "diffNumber": 1,
         "question": "____________, the ancient and diverse group of microorganisms, are the unseen architects of our planet’s ecosystem.",
         "options":"A) Prokaryotes\nB) Eukaryotes\nC) Arkaryotes\nD) Protists",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 4,
@@ -285,7 +285,7 @@
         "diffNumber": 2,
         "question": "___________ __________ proposed the Endosymbiotic Theory to explain the origin of the eukaryotic cells.",
         "options":"A) Lynn Loud\nB) Lynn Margulis\nC) Lynn Margaux\nD) Lynn Marge",
-        "answer": "",
+        "answer": ""
     },
     {
         "quarter": 4,
@@ -294,7 +294,7 @@
         "diffNumber": 3,
         "question": "What type of Archaea grows optimally in high-temperature environments like hot springs?",
         "options":"A) Pedophiles\nB) Halophiles\nC) Thermophiles\nD) Acidophiles",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 4,
@@ -303,7 +303,7 @@
         "diffNumber": 4,
         "question": "What do you call the basic layout of an organism’s body?",
         "options":"A) Body Plan\nB) Diet Plan\nC) Leche Flan\nD) Electric Fan",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 4,
@@ -312,7 +312,7 @@
         "diffNumber": 5,
         "question": "What do you call the degree of complexity in an animal’s body?",
         "options":"A) Level of biological hierarchy\nB) Level of tissue organization\nC) Level of degree complexity\nD) Level of body organization",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 4,
@@ -321,7 +321,7 @@
         "diffNumber": 6,
         "question": "A fluid-filled space inside an animal’s body that holds and protects organs, allowing them to grow and move independently.",
         "options":"A) Sugar Cavity\nB) Bone Cavity\nC) Tooth Cavity\nD) Body Cavity",
-        "answer": "B",
+        "answer": "B"
     },
     {
         "quarter": 4,
@@ -330,7 +330,7 @@
         "diffNumber": 7,
         "question": "The stages and processes by which an animal’s body forms after fertilization, including differences like protostome and deuterostome development.",
         "options":"A) Life Cycle\nB) Reproduction\nC) Patterns of Development\nD) Life Span",
-        "answer": "C",
+        "answer": "C"
     },
     {
         "quarter": 4,
@@ -339,7 +339,7 @@
         "diffNumber": 8,
         "question": "Tubes inside plants that carry water (xylem) and food (phloem). This lets plants grow taller. Example: ferns.",
         "options":"A) Vascular tissues\nB) Seeds \nC) Flowers \nD) Vaseline",
-        "answer": "A",
+        "answer": "A"
     },
     {
         "quarter": 4,
@@ -348,6 +348,6 @@
         "diffNumber": 9,
         "question": "A ___________ is a group of organisms that can interbreed and produce fertile offspring – for example, the Philippine eagle is a species, as is the golden kuhol.",
         "options":"A) Population\nB) Ecosystem\nC) Species\nD) Organization",
-        "answer": "C",
+        "answer": "C"
     }
 ]
