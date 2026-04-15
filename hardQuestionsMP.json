@@ -5,8 +5,8 @@
         "difficulty": "Hard",
         "diffNumber": 1,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
         "quarter": 1,
@@ -14,8 +14,8 @@
         "difficulty": "Hard",
         "diffNumber": 2,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
         "quarter": 1,
@@ -23,8 +23,8 @@
         "difficulty": "Hard",
         "diffNumber": 3,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
         "quarter": 1,
@@ -32,8 +32,8 @@
         "difficulty": "Hard",
         "diffNumber": 4,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
         "quarter": 1,
@@ -41,26 +41,145 @@
         "difficulty": "Hard",
         "diffNumber": 5,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
-        "quarter": 1,
+        "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
-        "diffNumber": 6,
+        "diffNumber": 1,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
     },
     {
-        "quarter": 1,
+        "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
-        "diffNumber": 7,
+        "diffNumber": 2,
         "question": "",
-        "answer": "",
-        "explanation": ""
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 2,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 3,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 2,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 4,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 2,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 5,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 3,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 1,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 3,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 2,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 3,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 3,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 3,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 4,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 3,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 5,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 4,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 1,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 4,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 2,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 4,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 3,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 4,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 4,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    },
+    {
+        "quarter": 4,
+        "quizType": "Multiple Choice",
+        "difficulty": "Hard",
+        "diffNumber": 5,
+        "question": "",
+        "options":"A) \nB) \nC) \nD) ",
+        "answer": ""
+    }
+]        "explanation": ""
     },
     {
         "quarter": 1,
