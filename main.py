@@ -147,8 +147,6 @@ try:
         diffChoice = diffMenu()
         if diffChoice == "1":
             questions = easyMP
-        elif diffChoice == "2":
-            questions = medMP
         else:
             questions = hardMP
             
