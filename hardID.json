@@ -4,40 +4,40 @@
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "A unifying theme stating that all organisms are made of one or more cells.",
+        "answer": "Organization"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "The process by which populations of organisms change over generations.",
+        "answer": "Evolution"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "A step in the scientific method where data is collected through senses or instruments.",
+        "answer": "Observation"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "This theme emphasizes the significance of genetic information encoded in DNA, which is utilized to produce proteins, regulate cellular processes, and determine the characteristics of living organisms.",
+        "answer": "Information"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "Grouping or ordering objects or events into categories based on properties or criteria. Example: Placing all animals with six legs in one group.",
+        "answer": "Classifying "
     },
     {
         "quarter": 2,
