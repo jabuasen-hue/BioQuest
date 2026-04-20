@@ -4,80 +4,80 @@
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "It is the scientific study of life and living organisms.",
+        "answer": "Biology"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "This branch of science focuses on understanding how living things interact with their environment.",
+        "answer": "Ecology"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The basic unit of life found in all living organisms.",
+        "answer": "Cell"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "The ability of living organisms to maintain stable internal conditions.",
+        "answer": "Homeostasis"
     },
     {
         "quarter": 1,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "The process by which organisms produce new individuals.",
+        "answer": "Reproduction"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "The idea that all living things share common traits due to a shared origin.",
+        "answer": "Common Descent"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "A unifying theme in biology that explains how species change over time.",
+        "answer": "Evolution"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The systematic way scientists ask questions and seek answers through observation and experimentation.",
+        "answer": "Scientific Method"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "A testable explanation used in scientific investigations.",
+        "answer": "Hypothesis"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "A characteristic of life that involves using energy to carry out processes.",
+        "answer": "Metabolism"
     },
     {
         "quarter": 3,
