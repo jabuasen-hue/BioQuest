@@ -10,6 +10,12 @@ try:
     with open("hardQuestionsMP.json", 'r', encoding="utf-8") as file:
         hardMP = json.load(file)
 
+    with open("easyID.json", 'r', encoding="utf-8") as file:
+        easyID = json.load(file)
+
+    with open("hardID.json", 'r', encoding="utf-8") as file:
+        hardID = json.load(file)
+
 
     def diffMenu():
         print(" " * 92, "-------------------------------------")
@@ -119,7 +125,30 @@ try:
             print("")
 
         diffChoice = diffMenu()
+        if diffChoice == "1":
+            questions = easyID
+        else:
+            questions = hardID
 
+        for q in questions:
+            if q["quarter"] == quarterChoice:
+                print()
+                print("-" * 221)
+                print(q['question'])
+                time.sleep(0.5)
+                print(q['options'])
+                time.sleep(0.5)
+
+                a = input("| What is your answer?: ")
+
+                if a == q["answer"]:
+                    print("joosy")
+                else:
+                    print("aww")
+                    print(f"| The correct answer is: {q['answer']}")
+
+                time.sleep(1.5)
+                input("\nPress Enter to proceed to next question")
 
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
@@ -149,12 +178,15 @@ try:
                 time.sleep(0.5)
                 print(q['options'])
                 time.sleep(0.5)
+
                 a = input("| What is your answer?: ")
+
                 if a == q["answer"]:
                     print("joosy")
                 else:
                     print("aww")
                     print(f"| The correct answer is: {q['answer']}")
+
                 time.sleep(1.5)
                 input("\nPress Enter to proceed to next question")
 
