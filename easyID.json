@@ -44,119 +44,119 @@
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 1,
-        "question": "The idea that all living things share common traits due to a shared origin.",
-        "answer": "Common Descent"
-    },
-    {
-        "quarter": 2,
-        "quizType": "Identification",
-        "difficulty": "Easy",
-        "diffNumber": 2,
-        "question": "A unifying theme in biology that explains how species change over time.",
+        "question": "The process by which species change over time.",
         "answer": "Evolution"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
+        "diffNumber": 2,
+        "question": "The idea that all species come from pre-existing species and change over generations.",
+        "answer": "Descent with Modification"
+    },
+    {
+        "quarter": 2,
+        "quizType": "Identification",
+        "difficulty": "Easy",
         "diffNumber": 3,
-        "question": "The systematic way scientists ask questions and seek answers through observation and experimentation.",
-        "answer": "Scientific Method"
+        "question": "A group of organisms of the same species living in the same area.",
+        "answer": "Population"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 4,
-        "question": "A testable explanation used in scientific investigations.",
-        "answer": "Hypothesis"
+        "question": "The process where new species arise.",
+        "answer": "Speciation"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 5,
-        "question": "A characteristic of life that involves using energy to carry out processes.",
-        "answer": "Metabolism"
+        "question": "A trait that increases an organism’s chances of survival and reproduction.",
+        "answer": "Adaptation"
     },
-    {
+        {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "An instrument used to magnify small objects like cells.",
+        "answer": "Microscope"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "The basic unit of life that all organisms are made of.",
+        "answer": "Cell"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The movement of particles from an area of high concentration to low concentration.",
+        "answer": "Diffusion"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "The diffusion of water across a selectively permeable membrane.",
+        "answer": "Osmosis"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "The thin, flexible barrier that surrounds the cell and controls what enters and leaves.",
+        "answer": "Cell Membrane"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "Organisms whose cells contain a nucleus and membrane-bound organelles.",
+        "answer": "Eukaryotes"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "A kingdom made up mostly of single-celled eukaryotic organisms.",
+        "answer": "Protista"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "Organisms that absorb nutrients from organic matter and often act as decomposers.",
+        "answer": "Fungi"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "The theory that explains how eukaryotic cells originated from symbiotic relationships.",
+        "answer": "Endosymbiotic Theory"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Easy",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "A group of protists that can perform photosynthesis like plants.",
+        "answer": "Algae"
     }
 ]
