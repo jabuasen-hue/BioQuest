@@ -72,6 +72,8 @@ try:
             menuChoice = input("| What would you like to do? (1-5): ").strip()
             while menuChoice not in ["1", "2", "3", "4", "5"]:
                 menuChoice = input("\n Please Enter a valid answer: ").strip()
+            for x in range(100):
+                print()
 
 
             if menuChoice == "1":
@@ -133,22 +135,22 @@ try:
         for q in questions:
             if q["quarter"] == quarterChoice:
                 print()
-                print("-" * 221)
-                print(q['question'])
+                print("-" * 221 + "\n")
+                print(f" | {q['question']}")
                 time.sleep(0.5)
-                print(q['options'])
+                print(f" | {q['options']}")
                 time.sleep(0.5)
 
-                a = input("| What is your answer?: ")
+                a = input(" | What is your answer?: ").strip().capitalize()
 
                 if a == q["answer"]:
-                    print("joosy")
+                    print(" | Correct!")
                 else:
-                    print("aww")
-                    print(f"| The correct answer is: {q['answer']}")
+                    print(" | Incorrect...")
+                    print(f" | The correct answer is: {q['answer']}!")
 
                 time.sleep(1.5)
-                input("\nPress Enter to proceed to next question")
+                input("\n | Press Enter to proceed to next question")
 
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
@@ -173,22 +175,23 @@ try:
         for q in questions:
             if q["quarter"] == quarterChoice:
                 print()
-                print("-" * 221)
-                print(q['question'])
+                print("-" * 221 + "\n")
+                print("\n", " " * 90, " ------------- Question  -------------")
+                print(f" | {q['question']}")
                 time.sleep(0.5)
-                print(q['options'])
+                print(f" | {q['options']}")
                 time.sleep(0.5)
 
-                a = input("| What is your answer?: ")
+                a = input(" | What is your answer?: ").strip().capitalize()
 
                 if a == q["answer"]:
-                    print("joosy")
+                    print(" | Correct!")
                 else:
-                    print("aww")
-                    print(f"| The correct answer is: {q['answer']}")
+                    print(" | Incorrect...")
+                    print(f" | The correct answer is: {q['answer']}!")
 
                 time.sleep(1.5)
-                input("\nPress Enter to proceed to next question")
+                input("\n | Press Enter to proceed to next question")
 
     def instructionsOption():
         print("\n", " " * 90, " ============= INSTRUCTIONS ============")
@@ -211,9 +214,10 @@ try:
 
 
     def achievementsOption():
-        print("Uh oh! That isn't available yet! This will be added soon :D")
+        print("\n", " " * 90, " ============= ACHIEVEMENTS ============")
+        print(" | Uh oh! That isn't available yet! This will be added soon :D")
 
-        input("Press ENTER to continue")
+        input(" | Press ENTER to continue")
 
         print("\n" + "-" * 221, "\n")
 
