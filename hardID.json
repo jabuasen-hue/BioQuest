@@ -44,119 +44,119 @@
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "The mechanism proposed by Charles Darwin where individuals with favorable traits are more likely to survive and reproduce.",
+        "answer": "Natural Selection"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "Random changes in allele frequencies in a population, especially in small populations.",
+        "answer": "Genetic Drift"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The movement of genes between populations through migration.",
+        "answer": "Gene Flow"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "The formation of new species due to geographic separation.",
+        "answer": "Allopatric Speciation"
     },
     {
         "quarter": 2,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "The principle stating that allele frequencies in a population remain constant in the absence of evolutionary forces.",
+        "answer": "Hardy-Weinberg Equilibrium"
     },
-    {
+        {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "The type of microscope that uses light and lenses to magnify specimens.",
+        "answer": "Compound Light Microscope"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "The fluid mosaic structure that makes up the cell membrane.",
+        "answer": "Phospholipid Bilayer"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The process of moving substances across a membrane using energy (ATP).",
+        "answer": "Active Transport"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "A diagram that shows evolutionary relationships among organisms.",
+        "answer": "Phylogenetic Tree"
     },
     {
         "quarter": 3,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "The movement of molecules across a membrane with the help of transport proteins but without using energy.",
+        "answer": "Facilitated Diffusion"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "answer": ""
+        "question": "The process in which one organism lives inside another and both benefit, important in the origin of eukaryotes.",
+        "answer": "Endosymbiosis"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "answer": ""
+        "question": "Thread-like structures that make up the body of most fungi.",
+        "answer": "Hyphae"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "answer": ""
+        "question": "The network formed by hyphae in fungi.",
+        "answer": "Mycelium"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "answer": ""
+        "question": "A protist that moves using hair-like structures called cilia.",
+        "answer": "Ciliate"
     },
     {
         "quarter": 4,
         "quizType": "Identification",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "answer": ""
+        "question": "The organelle believed to have originated from engulfed aerobic bacteria.",
+        "answer": "Mitochondria"
     }
 ]
