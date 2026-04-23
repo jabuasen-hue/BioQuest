@@ -16,7 +16,6 @@ try:
     with open("hardID.json", 'r', encoding="utf-8") as file:
         hardID = json.load(file)
 
-
     def diffMenu():
         print(" " * 92, "-------------------------------------")
         time.sleep(0.25)
@@ -45,29 +44,53 @@ try:
         time.sleep(0.25)
         print(" " * 92, "-------------------------------------")
         time.sleep(1)
-        quarterChoice = int(input("| What quarter would you like to study? (1-4): ").strip())
+        quarterChoice = input("| What quarter would you like to study? (1-4): ").strip()
         return quarterChoice
 
 
     def mainMenu():
         while True:
-            print(" " * 91, "=======================================")
+            print("=" * 72, "BIOQUEST", "=" * 72)
+            # Welcome Statement
+            time.sleep(3)
+            print("| Hi! and welcome to...")
+            time.sleep(3)
+            print("                                                           _____  _        ___                  _   ")
+            print("                                                          | ___ )(_) ___  / _ \ _   _  ___  ___| |_ ")
+            print("                                                          |  _  \| |/ _ \| | | | | | |/ _ \/ __| __|")
+            print("                                                          | |_) || | (_) | |_| | |_| |  __/\__ \ |_ ")
+            print("                                                          |_____/|_|\___/ \__\_\__,__|\___||___/\__|")
+            time.sleep(2)
+            print("\n| This is a quizzer, wherein you try your best to answer a series of questions correctly.")
+            time.sleep(2)
+            print("| Make sure to have fun!")
+            time.sleep(2)
+            print("| Try to explore more before trying out the main game")
+            time.sleep(2)
+            print("| Anyways, enjoy!")
+            time.sleep(1)
+            print("\n                                                ", "=" * 65)
             time.sleep(0.25)
-            print(" " * 91, "||             MAIN MENU             ||")
+            print("                                                 ||  __  __    __    ____  _  _    __  __  ____  _  _  __  __   ||")
             time.sleep(0.25)
-            print(" " * 91, "---------------------------------------")
+            print("                                                 || '  '`  )  ,__`  (_  _)( `( )  (  '`  )| ___)( `( )( |  | )  ||")
             time.sleep(0.25)
-            print(" " * 91, "| 1. Play                             |")
+            print("                                                 || |      | ,(__)`  _||_ |    |  |      ||__)  |  ` || |__| |  ||")
             time.sleep(0.25)
-            print(" " * 91, "| 2. Instructions                     |")
+            print("                                                 || (_)||(_)(__)(__)(____)(_)`_)  (_)||(_)|____)(_)`_)(______)  ||")
+            time.sleep(1)
+            print("                                                 ||-------------------------------------------------------------||")
             time.sleep(0.25)
-            print(" " * 91, "| 3. Achievements                     |")
+            print("                                                 ||1. Start Game                                                ||")
             time.sleep(0.25)
-            print(" " * 91, "| 4. Credits                          |")
+            print("                                                 ||2. Instructions                                              ||")
             time.sleep(0.25)
-            print(" " * 91, "| 5. Quit                             |")
+            print("                                                 ||3. Achievements                                              ||")
             time.sleep(0.25)
-            print(" " * 91, "---------------------------------------")
+            print("                                                 ||4. Credits                                                   ||")
+            time.sleep(0.25)
+            print("                                                 ||5. Quit                                                      ||")
+            print("                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
             time.sleep(1)
             menuChoice = input("| What would you like to do? (1-5): ").strip()
             while menuChoice not in ["1", "2", "3", "4", "5"]:
@@ -132,29 +155,11 @@ try:
         else:
             questions = hardID
 
-        for q in questions:
-            if q["quarter"] == quarterChoice:
-                print()
-                print("-" * 221 + "\n")
-                print(f" | {q['question']}")
-                time.sleep(0.5)
-                print(f" | {q['options']}")
-                time.sleep(0.5)
-
-                a = input(" | What is your answer?: ").strip().capitalize()
-
-                if a == q["answer"]:
-                    print(" | Correct!")
-                else:
-                    print(" | Incorrect...")
-                    print(f" | The correct answer is: {q['answer']}!")
-
-                time.sleep(1.5)
-                input("\n | Press Enter to proceed to next question")
+        runQuiz(questions)
 
     def quarterOptionMultiple():
         quarterChoice = quarterMenu()
-        while quarterChoice not in [1, 2, 3, 4]:
+        while quarterChoice not in ["1", "2", "3", "4"]:
             quarterChoice = input("| Please Enter a valid answer: ").strip()
 
         if quarterChoice == 1:
@@ -171,27 +176,90 @@ try:
             questions = easyMP
         else:
             questions = hardMP
-            
+
+        runQuiz(questions)
+
+# ===================================================================================================================
+# Run Quiz
+    def runQuiz(questions):
         for q in questions:
-            if q["quarter"] == quarterChoice:
-                print()
-                print("-" * 221 + "\n")
-                print("\n", " " * 90, " ------------- Question  -------------")
-                print(f" | {q['question']}")
-                time.sleep(0.5)
-                print(f" | {q['options']}")
-                time.sleep(0.5)
+            cont = "Y"
+            gameEnd = "======================================================================== GAME END ========================================================================"
 
-                a = input(" | What is your answer?: ").strip().capitalize()
+            if cont == "Y":  # Checks if player chose to continue
+                askedIndices = 0
+                score = 0
 
-                if a == q["answer"]:
-                    print(" | Correct!")
-                else:
-                    print(" | Incorrect...")
-                    print(f" | The correct answer is: {q['answer']}!")
+                print(" " * 67, "----------------")  # Border
+                print(" " * 67, "|Starting Round|")
+                print(" " * 67, "----------------")  # Border
 
-                time.sleep(1.5)
-                input("\n | Press Enter to proceed to next question")
+                while askedIndices < 5:  # Will check if the maximum amount of questions have already been asked
+                    # Tells player what question they are on
+                    time.sleep(1.5)
+                    print("\n" + " " * 60, "=" * 30)
+                    print(" " * 60, f"=           {askedIndices + 1} of 5           =")
+                    print(" " * 60, "=" * 30)
+
+                    # Displays question
+                    time.sleep(1.5)
+                    print("-" * 100)
+                    print(q["question"])
+                    print("-" * 100)
+                    time.sleep(1.5)
+                    print(q["options"])
+
+                    # Input Validation
+                    print("=" * 36)
+                    userAnswer = input(">>> Please enter your answer (A/B/C/D): ").upper().strip()
+                    print("=" * 36)
+                    while userAnswer not in ["A", "B", "C", "D"]:
+                        userAnswer = input(">>> Invalid answer. Please enter A, B, C, or D: ").upper().strip()
+
+                    # Checks if users answer is correct or not
+                    if userAnswer == q["answer"]:
+                        print("\n" + "*" * 50)
+                        print(" " * 21, "Correct!")
+                        print("*" * 50, "\n")
+                        score += 1 # Updates user score
+                        print("You have earned a point!")
+                    else:
+                        print("\n" + "*" * 50)
+                        print(" " * 20, "Incorrect")
+                        print("*" * 50, "\n")
+                    time.sleep(1)
+                    print("\n>>> Answer: ", q["answer"])
+                    time.sleep(2)
+                    print(">>> Explanation: ", q["explanation"], "\n")  # Displays an explanation regardless if player is right or wrong
+                    askedIndices += 1 # Adds one to the variable to show one question has already been answered
+
+                    # Asks player if they want to continue
+                    if askedIndices < 5:  # Checks if the amount of asked questions is lesser than questions per era
+                        print("=" * 33)
+                        cont = input("|Do you want to continue? (Y/N): ").upper().strip()
+                        print("=" * 33)
+                        while cont not in ["Y", "N"]:  # Input Validation
+                            cont = input("Invalid input. Do you want to continue? (Y/N): ").upper().strip()
+                        if cont == "N":  # If player chose to not continue
+                            print("Thanks for playing! Returning to main menu...")
+                            time.sleep(1.5)
+                            print(gameEnd, "\n")
+                            break  # Terminates loop
+                        else:
+                            continue  # Stops the while loop but continues the for loop
+
+                    # Outcome of round
+                    if askedIndices == 5:
+                        print("\n" + "-" * 150)  # Border
+                        time.sleep(1.5)
+                        print(f"You've completed this difficulty!")
+                        time.sleep(1.5)
+                        print(f"Your score is {score} out of 5")  # Displays score
+                        time.sleep(1.5)
+                        input("Press Enter to go to menu")  # Provides a brief period of time for players to read/reflect
+
+            else:
+                break  # Terminates loop and ends game
 
     def instructionsOption():
         print("\n", " " * 90, " ============= INSTRUCTIONS ============")
