@@ -1,5 +1,6 @@
 import time
 import json
+import random
 
 try:
     # READING from the file
@@ -16,33 +17,107 @@ try:
     with open("hardID.json", 'r', encoding="utf-8") as file:
         hardID = json.load(file)
 
+    with open("dialogue.json", 'r', encoding="utf-8") as file:
+        dialogue = json.load(file)
+
+    def tutorSelection():
+        refusalCount = 0
+        time.sleep(1)
+        print(" | System: Hi there...")
+        time.sleep(0.5)
+        print(" | System: Sorry, may I ask what I should call you by?")
+        time.sleep(0.5)
+        name = input(" | Enter your nickname: ")
+        time.sleep(1)
+        print(f" | System: Nice name, {name}!")
+        time.sleep(0.5)
+        print(" | System: Now, please choose your tutor:")
+        time.sleep(0.5)
+        print(" " * 60, "-------------------------------------")
+        time.sleep(0.25)
+        print(" " * 60, "| 1. Regina                         |")
+        time.sleep(0.25)
+        print(" " * 60, "| 2. Rodrick                        |")
+        time.sleep(0.25)
+        print(" " * 60, "| 3. Julien                         |")
+        time.sleep(0.25)
+        print(" " * 60, "| 4. System                         |")
+        time.sleep(0.25)
+        print(" " * 60, "-------------------------------------")
+        time.sleep(1)
+        tutor = input(" | Who do you prefer? (1-4): ")
+        while tutor not in ["1", "2", "3", "4"]:
+            tutor = input(" | Please enter a valid input: ")
+        time.sleep(0.25)
+        if tutor == "1":
+            print(" | System: Regina? Well, we won't judge")
+        elif tutor == "2":
+            print(" | System: Rodrick? Good choice!")
+        elif tutor == "3":
+            print(" | System: Woah, haven't heard that name in a while...")
+
+        if tutor in ["1", "2", "3"]:
+            return tutor
+        else:
+            while True:
+                if refusalCount == 0:
+                    refusalCount += 1
+                    print(" | System: Hey! You can't choose me!")
+                    time.sleep(0.5)
+                    print(" | System: Why am I even an option?\n")
+                    time.sleep(1)
+                    print(" " * 60, "-------------------------------------")
+                    time.sleep(0.25)
+                    print(" " * 60, "| 1. Regina                         |")
+                    time.sleep(0.25)
+                    print(" " * 60, "| 2. Rodrick                        |")
+                    time.sleep(0.25)
+                    print(" " * 60, "| 3. Julien                         |")
+                    time.sleep(0.25)
+                    print(" " * 60, "-------------------------------------")
+                    tutor = input(" | System: Please choose another tutor: ")
+                    if tutor in ["1", "2", "3"]:
+                        return tutor
+                    else:
+                        continue
+                elif refusalCount == 1:
+                    time.sleep(1)
+                    tutor = str(random.choice(["1", "2", "3"]))
+                    print(" | System: You know what? I'll choose for you.")
+                    return tutor
+                else:
+                    time.sleep(1)
+                    tutor = str(random.choice(["1", "2", "3"]))
+                    print(" | System: Trying this again? Give me a break.")
+                    return tutor
+
     def diffMenu():
-        print(" " * 92, "-------------------------------------")
+        print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
-        print(" " * 92, "| Difficulty Options:               |")
+        print(" " * 60, "| Difficulty Options:               |")
         time.sleep(0.25)
-        print(" " * 92, "| 1. Easy                           |")
+        print(" " * 60, "| 1. Easy                           |")
         time.sleep(0.25)
-        print(" " * 92, "| 2. Hard                           |")
+        print(" " * 60, "| 2. Hard                           |")
         time.sleep(0.25)
-        print(" " * 92, "-------------------------------------")
+        print(" " * 60, "-------------------------------------")
         time.sleep(1)
         diffChoice = input("| What difficulty would you like to answer? (1 or 2): ").strip()
         return diffChoice
 
 
     def quarterMenu():
-        print(" " * 92, "-------------------------------------")
+        print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
-        print(" " * 92, "| 1. First Quarter                  |")
+        print(" " * 60, "| 1. First Quarter                  |")
         time.sleep(0.25)
-        print(" " * 92, "| 2. Second Quarter                 |")
+        print(" " * 60, "| 2. Second Quarter                 |")
         time.sleep(0.25)
-        print(" " * 92, "| 3. Third Quarter                  |")
+        print(" " * 60, "| 3. Third Quarter                  |")
         time.sleep(0.25)
-        print(" " * 92, "| 4. Fourth Quarter                 |")
+        print(" " * 60, "| 4. Fourth Quarter                 |")
         time.sleep(0.25)
-        print(" " * 92, "-------------------------------------")
+        print(" " * 60, "-------------------------------------")
         time.sleep(1)
         quarterChoice = input("| What quarter would you like to study? (1-4): ").strip()
         return quarterChoice
@@ -55,11 +130,11 @@ try:
             time.sleep(3)
             print(" | Hi! and welcome to...")
             time.sleep(3)
-            print("                                                           _____  _        ___                  _   ")
-            print("                                                          | ___ )(_) ___  / _ \ _   _  ___  ___| |_ ")
-            print("                                                          |  _  \| |/ _ \| | | | | | |/ _ \/ __| __|")
-            print("                                                          | |_) || | (_) | |_| | |_| |  __/\__ \ |_ ")
-            print("                                                          |_____/|_|\___/ \__\_\__,__|\___||___/\__|")
+            print("                                                           _____  _       _____                 _   ")
+            print("                                                          | ___ )(_)_____| _   |_   _  ___  ___| |_ ")
+            print("                                                          |  _  || |  _  | | | | | | |/ _ |/ __| __|")
+            print("                                                          | |_) || | (_) | |_| | |_| |  __||__ | |_ ")
+            print("                                                          |_____)|_|_____|___(_|_____|____||___|___|")
             time.sleep(2)
             print("\n | This is a quizzer, wherein you try your best to answer a series of questions correctly.")
             time.sleep(2)
@@ -115,39 +190,29 @@ try:
         while True:
             time.sleep(1)
             print()
-            print(" " * 92, "================ PLAY ===============")
-            time.sleep(1)
-            print(" | System: Hi there...")
+            print(" " * 60, "================ PLAY ================")
+            tutor = tutorSelection()
             time.sleep(0.5)
-            print("\n | System: Sorry, may I ask what I should call you by?")
-            time.sleep(0.5)
-            name = input(" | Enter your nickname: ")
-            time.sleep(1)
-            print(f"\n | System: Nice name, {name}!")
-            time.sleep(0.5)
-            print(" | System: Now, please choose your tutor:")
-            time.sleep(5)
-            tutor = input(" | Who do you prefer?: ")
+            print(" | System: Let me call them for you. In the meantime, customize your quiz so you can start immediately!")
+            print(" " * 60, "-------------------------------------")
             time.sleep(0.25)
-            print(" " * 92, "-------------------------------------")
+            print(" " * 60, "| 1. Identification                 |")
             time.sleep(0.25)
-            print(" " * 92, "| 1. Identification                 |")
+            print(" " * 60, "| 2. Multiple Choice                |")
             time.sleep(0.25)
-            print(" " * 92, "| 2. Multiple Choice                |")
-            time.sleep(0.25)
-            print(" " * 92, "-------------------------------------")
+            print(" " * 60, "-------------------------------------")
             time.sleep(1)
             quizChoice = input("| What quiz type do you want? (1 or 2): ").strip()
             while quizChoice not in ["1", "2"]:
                 quizChoice = input("\n Please Enter a valid answer ").strip()
 
             if quizChoice == "1":
-                quarterOptionIdentif()
+                quarterOptionIdentif(tutor)
             else:
-                quarterOptionMultiple()
+                quarterOptionMultiple(tutor)
 
 
-    def quarterOptionIdentif():
+    def quarterOptionIdentif(tutor):
         quarterChoice = quarterMenu()
         while quarterChoice not in ["1", "2", "3", "4"]:
             quarterChoice = input("\n Please Enter a valid answer ").strip()
@@ -167,9 +232,9 @@ try:
         else:
             questions = hardID
 
-        runQuiz(questions)
+        runQuiz(questions, tutor)
 
-    def quarterOptionMultiple():
+    def quarterOptionMultiple(tutor):
         quarterChoice = quarterMenu()
         while quarterChoice not in ["1", "2", "3", "4"]:
             quarterChoice = input("| Please Enter a valid answer: ").strip()
@@ -189,14 +254,22 @@ try:
         else:
             questions = hardMP
 
-        runQuiz(questions)
+        runQuiz(questions, tutor)
 
 # ===================================================================================================================
 # Run Quiz
-    def runQuiz(questions):
+    def runQuiz(questions, tutor):
         for q in questions:
             cont = "Y"
             gameEnd = "======================================================================== GAME END ========================================================================"
+            tutorNames = {
+                "1": "Regina",
+                "2": "Rodrick",
+                "3": "Julien"
+            }
+
+            for line in dialogue[tutorNames[tutor]]["intro"]:
+                print(f"{line}")
 
             if cont == "Y":  # Checks if player chose to continue
                 askedIndices = 0
@@ -230,44 +303,53 @@ try:
 
                     # Checks if users answer is correct or not
                     if userAnswer == q["answer"]:
-                        print("\n" + "*" * 50)
-                        print(" " * 21, "Correct!")
-                        print("*" * 50, "\n")
-                        score += 1 # Updates user score
-                        print("You have earned a point!")
+                        for line in dialogue[tutorNames[tutor]]["correct"]:
+                            print(f"{line}")
+                        score += 1
                     else:
-                        print("\n" + "*" * 50)
-                        print(" " * 20, "Incorrect")
-                        print("*" * 50, "\n")
+                        for line in dialogue[tutorNames[tutor]]["incorrect"]:
+                            print(f"{line}")
+                        score += 1
                     time.sleep(1)
                     print("\n>>> Answer: ", q["answer"])
                     time.sleep(2)
-                    print(">>> Explanation: ", q["explanation"], "\n")  # Displays an explanation regardless if player is right or wrong
                     askedIndices += 1 # Adds one to the variable to show one question has already been answered
 
                     # Asks player if they want to continue
                     if askedIndices < 5:  # Checks if the amount of asked questions is lesser than questions per era
                         print("=" * 33)
-                        cont = input("|Do you want to continue? (Y/N): ").upper().strip()
+                        cont = input(dialogue[tutorNames[tutor]]["continue"]).upper().strip()
                         print("=" * 33)
                         while cont not in ["Y", "N"]:  # Input Validation
                             cont = input("Invalid input. Do you want to continue? (Y/N): ").upper().strip()
                         if cont == "N":  # If player chose to not continue
-                            print("Thanks for playing! Returning to main menu...")
+                            print(dialogue[tutorNames[tutor]]["no"])
                             time.sleep(1.5)
                             print(gameEnd, "\n")
                             break  # Terminates loop
                         else:
+                            print(dialogue[tutorNames[tutor]]["yes"])
                             continue  # Stops the while loop but continues the for loop
 
                     # Outcome of round
                     if askedIndices == 5:
                         print("\n" + "-" * 150)  # Border
                         time.sleep(1.5)
-                        print(f"You've completed this difficulty!")
+                        print(f" | System: Your score is {score} out of 5-")  # Displays score
+                        time.sleep(0.25)
+                        print(dialogue[tutorNames[tutor]]["final"[score]])
                         time.sleep(1.5)
-                        print(f"Your score is {score} out of 5")  # Displays score
+                        print(" | System: Well you two have certainly gotten close.")
+                        time.sleep(0.5)
+                        print(" | System: A bit too close...")
+                        time.sleep(0.25)
+                        print("               ")  # overwrites with spaces
                         time.sleep(1.5)
+                        print("\r | System: ...")
+                        time.sleep(2)
+                        print(" | System: That's enough for now.")
+                        time.sleep(0.5)
+                        print(" | System: See you soon!")
                         input("Press Enter to go to menu")  # Provides a brief period of time for players to read/reflect
 
             else:

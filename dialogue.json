@@ -1,0 +1,62 @@
+{
+  "Regina": {
+    "intro": [
+      " | Regina: Hey, {name}. I'll just call you nerd, it's easier.",
+      " | Regina: Since you decided to be a nerd today, I'll be guiding you through the questions.",
+      " | Regina: Let's start."
+    ],
+    "correct": " | Regina: Plus points to becoming more of a nerd!",
+    "incorrect": " | Regina: Girl, even I knew the answer to that. Do better.",
+    "continue": " | Regina: Are you gonna continue? (Y/N): ",
+    "yes": " | Regina: Good for you, nerd",
+    "no": " | Regina: You're really gonna quit now? Ugh, thanks for wasting my time, nerd!",
+    "final": [
+      " | Regina: Girl, how are you THIS bad? Get ready to fail that quiz or whatever",
+      " | Regina: Now WHAT is going on inside your head?",
+      " | Regina: How bad do you have to be to get this score?",
+      " | Regina: Well, you go girl.",
+      " | Regina: You're almost worthy of being called your name, nerd",
+      " | Regina: Not bad, {name}."
+    ]
+  },
+  "Rodrick": {
+    "intro": [
+      " | Rodrick: Hi, {name}!",
+      " | Rodrick: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
+      " | Rodrick: Let's go!"
+    ],
+    "feedback": " | Rodrick: Correct! Keep it up!",
+    "incorrect": " | Rodrick: This is why we have a tutoring session, right? Let's do better!",
+    "continue": " | Rodrick: Shall we proceed? (Y/N): ",
+    "yes": " | Rodrick: Okay! Let's move on then!",
+    "no": " | Rodrick: Oh, well let me know if you need me!",
+    "final": [
+      " | Rodrick: Oh, this just means Biology might not be your strongest suit. This doesn't mean your bad or anything!",
+      " | Rodrick: Umm, look at the positive side. You got a point! Try another session and you'll surely get better!",
+      " | Rodrick: Well, you did try your best! You'll surely get better with one more session!",
+      " | Rodrick: Huh, you actually passed! Try again and you'll surely get a better score!",
+      " | Rodrick: So close! Just try one more session and that perfect score is surely yours",
+      " | Rodrick: Good job! Your efforts will definitely pay off. Now, go ace that test!"
+    ]
+  },
+  "Julien": {
+    "intro": [
+      " | Julien: Hi, {name}!",
+      " | Julien: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
+      " | Julien: Let's go!"
+    ],
+    "correct": " | Julien: Correct! Keep it up!",
+    "incorrect": " | Julien: This is why we have a tutoring session, right? Let's do better!",
+    "continue": " | Julien: Are you gonna continue? (Y/N): ",
+    "yes": " | Julien: Good for you, nerd",
+    "no": " | Julien: You're really gonna quit now? Ugh, thanks for wasting my time, nerd!",
+    "final": [
+      " | Julien: Oh, this just means Biology might not be your strongest suit. This doesn't mean your bad or anything!",
+      " | Julien: Umm, look at the positive side. You got a point! Try another session and you'll surely get better!",
+      " | Julien: Well, you did try your best! You'll surely get better with one more session!",
+      " | Julien: Huh, you actually passed! Try again and you'll surely get a better score!",
+      " | Julien: So close! Just try one more session and that perfect score is surely yours",
+      " | Julien: Good job! Your efforts will definitely pay off. Now, go ace that test!"
+    ]
+  }
+}
