@@ -5,7 +5,7 @@
         "difficulty": "Hard",
         "diffNumber": 1,
         "question": "A unifying theme stating that all organisms are made of one or more cells.",
-        "answer": "Organization"
+        "answer": "Cellular organization"
     },
     {
         "quarter": 1,
@@ -37,7 +37,7 @@
         "difficulty": "Hard",
         "diffNumber": 5,
         "question": "Grouping or ordering objects or events into categories based on properties or criteria. Example: Placing all animals with six legs in one group.",
-        "answer": "Classifying "
+        "answer": "Classifying"
     },
     {
         "quarter": 2,
@@ -45,7 +45,7 @@
         "difficulty": "Hard",
         "diffNumber": 1,
         "question": "The mechanism proposed by Charles Darwin where individuals with favorable traits are more likely to survive and reproduce.",
-        "answer": "Natural Selection"
+        "answer": "Natural selection"
     },
     {
         "quarter": 2,
@@ -53,7 +53,7 @@
         "difficulty": "Hard",
         "diffNumber": 2,
         "question": "Random changes in allele frequencies in a population, especially in small populations.",
-        "answer": "Genetic Drift"
+        "answer": "Genetic drift"
     },
     {
         "quarter": 2,
@@ -61,7 +61,7 @@
         "difficulty": "Hard",
         "diffNumber": 3,
         "question": "The movement of genes between populations through migration.",
-        "answer": "Gene Flow"
+        "answer": "Gene flow"
     },
     {
         "quarter": 2,
@@ -69,7 +69,7 @@
         "difficulty": "Hard",
         "diffNumber": 4,
         "question": "The formation of new species due to geographic separation.",
-        "answer": "Allopatric Speciation"
+        "answer": "Allopatric speciation"
     },
     {
         "quarter": 2,
@@ -77,7 +77,7 @@
         "difficulty": "Hard",
         "diffNumber": 5,
         "question": "The principle stating that allele frequencies in a population remain constant in the absence of evolutionary forces.",
-        "answer": "Hardy-Weinberg Equilibrium"
+        "answer": "Hardy-Weinberg equilibrium"
     },
         {
         "quarter": 3,
@@ -85,7 +85,7 @@
         "difficulty": "Hard",
         "diffNumber": 1,
         "question": "The type of microscope that uses light and lenses to magnify specimens.",
-        "answer": "Compound Light Microscope"
+        "answer": "Compound light microscope"
     },
     {
         "quarter": 3,
@@ -93,7 +93,7 @@
         "difficulty": "Hard",
         "diffNumber": 2,
         "question": "The fluid mosaic structure that makes up the cell membrane.",
-        "answer": "Phospholipid Bilayer"
+        "answer": "Phospholipid bilayer"
     },
     {
         "quarter": 3,
@@ -101,7 +101,7 @@
         "difficulty": "Hard",
         "diffNumber": 3,
         "question": "The process of moving substances across a membrane using energy (ATP).",
-        "answer": "Active Transport"
+        "answer": "Active transport"
     },
     {
         "quarter": 3,
@@ -109,7 +109,7 @@
         "difficulty": "Hard",
         "diffNumber": 4,
         "question": "A diagram that shows evolutionary relationships among organisms.",
-        "answer": "Phylogenetic Tree"
+        "answer": "Phylogenetic tree"
     },
     {
         "quarter": 3,
@@ -117,7 +117,7 @@
         "difficulty": "Hard",
         "diffNumber": 5,
         "question": "The movement of molecules across a membrane with the help of transport proteins but without using energy.",
-        "answer": "Facilitated Diffusion"
+        "answer": "Facilitated diffusion"
     },
     {
         "quarter": 4,
