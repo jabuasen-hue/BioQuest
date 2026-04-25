@@ -21,7 +21,7 @@
   },
   "Rodrick": {
     "intro": [
-      " | Rodrick: Hi, {name}!",
+      " | Rodrick: Hi there!",
       " | Rodrick: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
       " | Rodrick: Let's go!"
     ],
@@ -41,22 +41,22 @@
   },
   "Julien": {
     "intro": [
-      " | Julien: Hi, {name}!",
-      " | Julien: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
+      " | Julien: Hey!",
+      " | Julien: So I'll be here to help you answer some questions.",
       " | Julien: Let's go!"
     ],
-    "correct": " | Julien: Correct! Keep it up!",
-    "incorrect": " | Julien: This is why we have a tutoring session, right? Let's do better!",
-    "continue": " | Julien: Are you gonna continue? (Y/N): ",
-    "yes": " | Julien: Good for you, nerd",
-    "no": " | Julien: You're really gonna quit now? Ugh, thanks for wasting my time, nerd!",
+    "correct": " | Julien: Correct! Keep up the good work!",
+    "incorrect": " | Julien: Oopsie, oh no! It's okay, what comes from the bottom climbs up to the top.",
+    "continue": " | Julien: Do you want to continue? (Y/N): ",
+    "yes": " | Julien: Okay!",
+    "no": " | Julien: Aww, well bye!",
     "final": [
-      " | Julien: Oh, this just means Biology might not be your strongest suit. This doesn't mean your bad or anything!",
-      " | Julien: Umm, look at the positive side. You got a point! Try another session and you'll surely get better!",
-      " | Julien: Well, you did try your best! You'll surely get better with one more session!",
-      " | Julien: Huh, you actually passed! Try again and you'll surely get a better score!",
-      " | Julien: So close! Just try one more session and that perfect score is surely yours",
-      " | Julien: Good job! Your efforts will definitely pay off. Now, go ace that test!"
+      " | Julien: Oh, study more. If you're not gonna study what will happen on the actual quiz? :<",
+      " | Julien: Well, study more. If you're not gonna study what will happen on the actual quiz? :<",
+      " | Julien: Next time, study more. If you're not gonna study what will happen on the actual quiz? :<",
+      " | Julien: Congrats! You got three out of five, that's already high! Are you ready for your actual quiz now?",
+      " | Julien: Congrats! You got four out of five, that's high! Are you ready for your actual quiz now?",
+      " | Julien: Congrats! You got five out of five, that's so high! Are you ready for your actual quiz now?"
     ]
   }
 }
