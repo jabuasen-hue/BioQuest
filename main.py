@@ -7,11 +7,14 @@ import os
 from datetime import datetime
 
 # ===================================================================================================================
+# Loads achievement progress from a JSON file
+# If the file does not exist or is corrupted, it returns default locked achievements
 def loadAchievements():
     try:
         with open("achievements.json", "r") as f:
             return json.load(f)
     except:
+        # Fallback: initialize all achievements as locked (False)
         return {
             "bio_godz": False,
             "smart_cookie": False,
@@ -23,6 +26,8 @@ def loadAchievements():
             "oops": False
         }
 
+# Saves updated achievement progress into the JSON file
+# This ensures achievements persist even after the program is closed
 def saveAchievements(data):
     with open("achievements.json", "w") as f:
         json.dump(data, f)
@@ -501,7 +506,6 @@ try:
                 unlocked_now = []
 
                 # ACHIEVEMENTS
-
                 if total_attempts >= 1 and not achievements["first_blood"]:
                     achievements["first_blood"] = True
                     unlocked_now.append(achievementNames["first_blood"])
