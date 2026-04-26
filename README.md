@@ -16,7 +16,6 @@ Choose from any topic covered during the quarter. Everything—from cells to gen
 3. Pick a Quiz Mode
 Different quiz types make learning flexible and fun:
 Multiple Choice
-True/False
 Identification
 
 5. Answer and Explore
@@ -29,9 +28,6 @@ Your results are saved day by day and automatically transferred to Google Sheets
 
 Daily Quiz Tracking
 Your scores, mistakes, and improvements are stored each day. The program transfers your data automatically to Google Sheets, making progress tracking simple and organized.
-
-Quarterly Topic Updates
-Every quarter, new biology topics are added and converted into fresh quiz sets.
 
 Tutor Customization
 Choose how you want to learn—through humor, speed, detail, or calm discussion.
