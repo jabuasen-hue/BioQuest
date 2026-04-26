@@ -311,7 +311,7 @@ try:
 
         # Display tutor-specific intro dialogue before quiz starts
         for line in dialogue[tutorNames[tutor]]["intro"]:
-            print(line)
+        print(line.format(name=name))
 
         time.sleep(2.5)
 
@@ -367,10 +367,10 @@ try:
 
                 # Check correctness of answer
                 if userAnswer == q["answer"]:
-                    print(dialogue[tutorNames[tutor]]["correct"])
+                    print(dialogue[tutorNames[tutor]]["correct"].format(name=name))
                     score += 1
                 else:
-                    print(dialogue[tutorNames[tutor]]["incorrect"])
+                    print(dialogue[tutorNames[tutor]]["incorrect"].format(name=name))
                 time.sleep(1)
                 print("\n>>> Answer: ", q["answer"])
                 time.sleep(2)
@@ -380,19 +380,19 @@ try:
                 # Early exit option (user-controlled pacing)
                 if askedIndices < 5:
                     print("=" * 33)
-                    cont = input(dialogue[tutorNames[tutor]]["continue"]).upper().strip()
+                    cont = input(dialogue[tutorNames[tutor]]["continue"].format(name=name)).upper().strip()
 
                     # Validate continue input
                     while cont not in ["Y", "N"]:  # Input Validation
                         cont = input("Invalid input. Do you want to continue? (Y/N): ").upper().strip()
                         
                     if cont == "N":  # If player chose to not continue
-                        print(dialogue[tutorNames[tutor]]["no"])
+                        print(dialogue[tutorNames[tutor]]["no"].format(name=name))
                         time.sleep(1.5)
                         print(gameEnd, "\n")
                         break
                     else: # If player chooses to continue
-                        print(dialogue[tutorNames[tutor]]["yes"])
+                        print(dialogue[tutorNames[tutor]]["yes"].format(name=name))
                         continue 
 
                 # Final result display after quiz ends
@@ -404,7 +404,7 @@ try:
                     time.sleep(0.25)
 
                     # Ending dialogue depends on performance
-                    print(dialogue[tutorNames[tutor]]["final"][score])
+                    print(dialogue[tutorNames[tutor]]["final"][score].format(name=name))
                     
                     time.sleep(1.5)
                     print("\n | System: Well you two have certainly gotten close.")
