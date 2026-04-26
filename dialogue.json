@@ -25,7 +25,7 @@
       " | Rodrick: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
       " | Rodrick: Let's go!"
     ],
-    "feedback": " | Rodrick: Correct! Keep it up!",
+    "correct": " | Rodrick: Correct! Keep it up!",
     "incorrect": " | Rodrick: This is why we have a tutoring session, right? Let's do better!",
     "continue": " | Rodrick: Shall we proceed? (Y/N): ",
     "yes": " | Rodrick: Okay! Let's move on then!",
