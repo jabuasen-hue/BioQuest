@@ -21,22 +21,22 @@
   },
   "Rodrick": {
     "intro": [
-      " | Rodrick: Hi there!",
-      " | Rodrick: To cut it short, I'll be guiding you through a series of questions that you have to answer!",
-      " | Rodrick: Let's go!"
+      " | Rodrick: Oh great, I have to do this...",
+      " | Rodrick: Alright, {name}, let's get this over with.",
+      " | Rodrick: Try not to embarrass yourself too much."
     ],
-    "correct": " | Rodrick: Correct! Keep it up!",
-    "incorrect": " | Rodrick: This is why we have a tutoring session, right? Let's do better!",
-    "continue": " | Rodrick: Shall we proceed? (Y/N): ",
-    "yes": " | Rodrick: Okay! Let's move on then!",
-    "no": " | Rodrick: Oh, well let me know if you need me!",
+    "correct": " | Rodrick: Huh. You actually got that right. Weird.",
+    "incorrect": " | Rodrick: Wow... that was painful to watch.",
+    "continue": " | Rodrick: You still going, or are you done already? (Y/N): ",
+    "yes": " | Rodrick: Fine. Let's keep going, I guess.",
+    "no": " | Rodrick: Yeah, quitting sounds about right.",
     "final": [
-      " | Rodrick: Oh, this just means Biology might not be your strongest suit. This doesn't mean your bad or anything!",
-      " | Rodrick: Umm, look at the positive side. You got a point! Try another session and you'll surely get better!",
-      " | Rodrick: Well, you did try your best! You'll surely get better with one more session!",
-      " | Rodrick: Huh, you actually passed! Try again and you'll surely get a better score!",
-      " | Rodrick: So close! Just try one more session and that perfect score is surely yours",
-      " | Rodrick: Good job! Your efforts will definitely pay off. Now, go ace that test!"
+      " | Rodrick: Yikes. I've seen better effort from a broken calculator.",
+      " | Rodrick: That score? Yeah... maybe don't tell anyone about this.",
+      " | Rodrick: Not great, not terrible. Mostly just... meh.",
+      " | Rodrick: Okay, that was actually decent. Don't let it get to your head.",
+      " | Rodrick: Alright, I'll admit it. That was pretty good.",
+      " | Rodrick: Whoa, okay—did NOT expect that. You actually crushed it."
     ]
   },
   "Julien": {
