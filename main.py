@@ -1,6 +1,37 @@
 import time
 import random
 import json
+import csv
+import os
+from datetime import datetime
+
+def save_score(name, quizChoice, score, tutor):
+    today = str(datetime.now().date())
+    tutorNames = {
+        "1": "Regina",
+        "2": "Rodrick",
+        "3": "Julien"
+    }
+    quizNames = {
+        "1": "Identification",
+        "2": "Multiple Choice"
+    }
+
+    file_exists = os.path.isfile("achievements.csv")
+
+    with open("achievements.csv", "a", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=["date", "name", "quiz", "score", "tutor"])
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            "date": today,
+            "name": name,
+            "quiz": quizNames[quizChoice],
+            "score": score,
+            "tutor": tutorNames[tutor]
+        })
 
 try:
     # READING from the file
@@ -174,7 +205,7 @@ try:
         time.sleep(1)
         quarterChoice = int(input(" | What quarter would you like to study? (1-4): ").strip())
         while quarterChoice not in [1, 2, 3, 4]:
-            quarterChoice = input("\n Please Enter a valid answer ").strip()
+            quarterChoice = int(input("\n Please Enter a valid answer ").strip())
 
         time.sleep(1)
         print(" " * 60, "-------------------------------------")
@@ -216,18 +247,16 @@ try:
         if cont == "Y":  # Checks if player chose to continue
             askedIndices = 0
             score = 0
+            filtered_questions = [
+                q for q in questions
+                if q["quarter"] == quarterChoice
+            ]
 
-            print(" " * 67, "----------------")  # Border
-            print(" " * 67, "|Starting Round|")
-            print(" " * 67, "----------------")  # Border
+            if not filtered_questions:
+                print("No questions found for this quarter.")
+                return
 
             while askedIndices < 5:  # Will check if the maximum amount of questions have already been asked
-                filtered_questions = []
-
-                for q in questions:
-                    if q["quarter"] == quarterChoice:
-                        filtered_questions.append(q)
-
                 q = filtered_questions[askedIndices]
 
                 # Tells player what question they are on
@@ -290,15 +319,17 @@ try:
                     print(dialogue[tutorNames[tutor]]["final"][score])
                     time.sleep(1.5)
                     print("\n | System: Well you two have certainly gotten close.")
-                    time.sleep(0.5)
+                    time.sleep(1)
                     print(" | System: ...")
                     time.sleep(2)
                     print(" | System: That's enough for now.")
                     time.sleep(1)
                     print(" | System: See you soon!")
                     input("Press Enter to go to menu")  # Provides a brief period of time for players to read/reflect
-                    time.sleep(1)
+                    save_score(name, quizChoice, score, tutor)
                     time.sleep(0.5)
+                    for x in range(50):
+                        print()
                     return
         else:
             return
@@ -325,7 +356,35 @@ try:
 
     def achievementsOption():
         print("\n", " " * 60, " ============= ACHIEVEMENTS ============")
-        print(" | Uh oh! That isn't available yet! This will be added soon :D")
+        scores = []
+        hasData = False  # Track if the code actually reads anything
+
+        try:
+            with open("achievements.csv", "r") as f:
+                reader = csv.DictReader(f)
+
+                for i, row in enumerate(reader, start=1):
+                    if not row["score"]:  # Skip empty/broken rows
+                        continue
+
+                    hasData = True
+
+                    score = int(row["score"])
+                    scores.append(score)
+
+                    print("\n=== Achievement Log ===")
+                    print(f">>> [{i}] {row['date']} | {row['name']} | {row['quiz']} | {score}/5 | {row['tutor']}")
+
+            if not hasData:
+                print(" | No achievements yet. Play a quiz first!")
+
+            elif scores:
+                avg = sum(scores) / len(scores) * 100
+                print(f"\nAverage Score: {avg:.2f}%")
+                print(f"Total Attempts: {len(scores)}")
+
+        except FileNotFoundError:
+            print("No records found yet.")
 
         input(" | Press ENTER to continue")
 
