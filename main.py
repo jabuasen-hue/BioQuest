@@ -7,6 +7,26 @@ import os
 from datetime import datetime
 
 # ===================================================================================================================
+def loadAchievements():
+    try:
+        with open("achievements.json", "r") as f:
+            return json.load(f)
+    except:
+        return {
+            "bio_godz": False,
+            "smart_cookie": False,
+            "first_blood": False,
+            "on_fire": False,
+            "consistent": False,
+            "apprentice": False,
+            "veteran": False,
+            "oops": False
+        }
+
+def saveAchievements(data):
+    with open("achievements.json", "w") as f:
+        json.dump(data, f)
+        
 # Saves quiz results into a CSV file for achievement tracking
 def saveScore(name, quizChoice, score, tutor):
     today = str(datetime.now().date())
@@ -431,6 +451,16 @@ try:
 
 # ===================================================================================================================
 # Achievement viewer (reads stored quiz results from CSV)
+     achievementNames = {
+        "bio_godz": "Biology Godz (5/5 Score)",
+        "smart_cookie": "Smart Cookie (90% Avg)",
+        "first_blood": "First Blood",
+        "on_fire": "On Fire (4/5)",
+        "consistent": "Consistent Mind (70% Avg)",
+        "apprentice": "Quiz Apprentice (3 Attempts)",
+        "veteran": "Quiz Veteran (10 Attempts)",
+        "oops": "Ouch... (0 Score)"
+    }
     def achievementsOption():
         print("\n", " " * 60, " ============= ACHIEVEMENTS ============")
         scores = []
@@ -460,10 +490,64 @@ try:
                 print(" | No achievements yet. Play a quiz first!")
 
             # Performance summary
-            elif scores:
+                        elif scores:
                 avg = sum(scores) / len(scores) * 100
+                total_attempts = len(scores)
+
                 print(f"\nAverage Score: {avg:.2f}%")
-                print(f"Total Attempts: {len(scores)}")
+                print(f"Total Attempts: {total_attempts}")
+
+                achievements = loadAchievements()
+                unlocked_now = []
+
+                # ACHIEVEMENTS
+
+                if total_attempts >= 1 and not achievements["first_blood"]:
+                    achievements["first_blood"] = True
+                    unlocked_now.append(achievementNames["first_blood"])
+
+                if 5 in scores and not achievements["bio_godz"]:
+                    achievements["bio_godz"] = True
+                    unlocked_now.append(achievementNames["bio_godz"])
+
+                if avg >= 90 and not achievements["smart_cookie"]:
+                    achievements["smart_cookie"] = True
+                    unlocked_now.append(achievementNames["smart_cookie"])
+
+                if any(s >= 4 for s in scores) and not achievements["on_fire"]:
+                    achievements["on_fire"] = True
+                    unlocked_now.append(achievementNames["on_fire"])
+
+                if avg >= 70 and not achievements["consistent"]:
+                    achievements["consistent"] = True
+                    unlocked_now.append(achievementNames["consistent"])
+
+                if total_attempts >= 3 and not achievements["apprentice"]:
+                    achievements["apprentice"] = True
+                    unlocked_now.append(achievementNames["apprentice"])
+
+                if total_attempts >= 10 and not achievements["veteran"]:
+                    achievements["veteran"] = True
+                    unlocked_now.append(achievementNames["veteran"])
+
+                if 0 in scores and not achievements["oops"]:
+                    achievements["oops"] = True
+                    unlocked_now.append(achievementNames["oops"])
+
+                # Save progress
+                saveAchievements(achievements)
+
+                # Show new unlocks
+                if unlocked_now:
+                    print("\n🏆 New Achievements Unlocked!")
+                    for a in unlocked_now:
+                        print(f" - {a}")
+
+                # Show all achievements
+                print("\n=== Your Achievements ===")
+                for key, val in achievements.items():
+                    status = "Unlocked" if val else "Locked"
+                    print(f"{achievementNames[key]}: {status}")
 
         except FileNotFoundError:
             print("No records found yet.")
