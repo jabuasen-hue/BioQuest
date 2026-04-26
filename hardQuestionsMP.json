@@ -4,477 +4,180 @@
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which statement best distinguishes biology from other natural sciences?",
+        "options":"A) It focuses exclusively on living organisms at the cellular level\nB) It studies systems capable of evolution through natural selection\nC) It relies solely on experimental methods\nD) It excludes chemical and physical principles",
+        "answer": "B"
     },
     {
         "quarter": 1,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "A researcher observes that a population of bacteria becomes resistant to antibiotics over generations. This observation best supports which unifying theme of biology?",
+        "options":"A) Structure and function are correlated\nB) Information flow regulates biological systems\nC) Evolution explains unity and diversity of life\nD) Energy and matter transformations drive processes",
+        "answer": "C"
+}
     },
     {
         "quarter": 1,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which scenario best demonstrates homeostasis at the cellular level?",
+        "options":"A) A plant growing toward sunlight\nB) A cell maintaining stable internal pH despite external changes\nC) DNA replication during cell division\nD) An organism adapting over generations",
+        "answer": "B"
     },
     {
         "quarter": 1,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which characteristic is NOT universally shared by all living organisms?",
+        "options":"A) Ability to evolve\nB) Cellular organization\nC) Use of oxygen for metabolism\nD) Ability to reproduce",
+        "answer": "C"
     },
     {
         "quarter": 1,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "In scientific inquiry, which of the following best describes a hypothesis?",
+        "options":"A) A widely accepted explanation supported by evidence\nB) A testable and falsifiable explanation for observations\nC) A collection of untested observations\nD) A conclusion drawn after experimentation",
+        "answer": "B"
     },
     {
         "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which scenario best illustrates descent with modification?",
+        "options":"A) Identical twins sharing the same DNA\nB) A population of finches developing varied beak shapes across generations\nC) Cells undergoing mitosis to produce identical copies\nD) An organism maintaining internal balance through homeostasis",
+        "answer": "B"
     },
     {
         "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which mechanism most directly increases genetic variation within a population?",
+        "options":"A) Natural selection\nB) Genetic drift\nC) Mutation\nD) Stabilizing selection",
+        "answer": "C"
     },
     {
         "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "A small population of organisms becomes geographically isolated and, over time, evolves into a new species. Which process is primarily responsible?",
+        "options":"A) Sympatric speciation\nB) Allopatric speciation\nC) Artificial selection\nD) Gene flow",
+        "answer": "B"
     },
     {
         "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which statement best explains how natural selection leads to adaptation?",
+        "options":"A) Organisms intentionally develop traits they need to survive\nB) Favorable traits become more common due to differential reproductive success\nC) All individuals in a population change simultaneously\nD) Traits are acquired during an organism’s lifetime and passed on",
+        "answer": "B"
     },
     {
         "quarter": 2,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which of the following best describes the founder effect?",
+        "options":"A) Random changes in allele frequencies due to natural disasters\nB) Reduced genetic variation when a new population is established by a small group\nC) Movement of alleles between populations\nD) Selection against extreme phenotypes",
+        "answer": "B"
     },
     {
         "quarter": 3,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which factor most directly limits the resolving power of a light microscope when observing cellular structures?",
+        "options":"A) The wavelength of visible light\nB) The size of the objective lens\nC) The staining technique used\nD) The magnification level",
+        "answer": "A"
     },
     {
         "quarter": 3,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which cellular structure is primarily responsible for modifying, sorting, and packaging proteins for secretion?",
+        "options":"A) Ribosome\nB) Endoplasmic reticulum\nC) Golgi apparatus\nD) Lysosome",
+        "answer": "C"
     },
     {
         "quarter": 3,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "A cell is placed in a hypertonic solution. What is the most likely outcome?",
+        "options":"A) The cell will swell and burst\nB) The cell will shrink as water leaves\nC) The cell will remain unchanged\nD) The cell will actively pump water inside",
+        "answer": "B"
     },
     {
         "quarter": 3,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which type of membrane protein is directly involved in facilitated diffusion?",
+        "options":"A) Peripheral proteins\nB) Structural proteins\nC) Transport proteins\nD) Recognition proteins",
+        "answer": "C"
     },
     {
         "quarter": 3,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which evidence would most strongly support a close evolutionary relationship between two species in a phylogenetic tree?",
+        "options":"A) Similar habitats\nB) Identical ecological roles\nC) High similarity in DNA sequences\nD) Comparable body sizes",
+        "answer": "C"
     },
     {
         "quarter": 4,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 1,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which feature is most characteristic of prokaryotic organisms and distinguishes them from eukaryotes?",
+        "options":"A) Presence of membrane-bound organelles\nB) DNA enclosed within a nucleus\nC) Circular DNA located in a nucleoid region\nD) Complex cytoskeleton structure",
+        "answer": "C"
     },
     {
         "quarter": 4,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 2,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which event is best explained by the endosymbiotic theory of eukaryotic cell evolution?",
+        "options":"A) Formation of the nuclear envelope from the plasma membrane\nB) Development of mitochondria from engulfed aerobic bacteria\nC) Evolution of multicellularity in plants\nD) Origin of the cytoskeleton from protein polymers",
+         "answer": "B"
     },
     {
         "quarter": 4,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 3,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which group of protists is primarily responsible for producing a significant portion of Earth’s oxygen through photosynthesis?",
+        "options":"A) Protozoa\nB) Slime molds\nC) Diatoms\nD) Kinetoplastids",
+        "answer": "C"
     },
     {
         "quarter": 4,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 4,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": ""
+        "question": "Which adaptation is most critical for the success of plants in terrestrial environments?",
+        "options":"A) Ability to perform photosynthesis\nB) Development of vascular tissue for transport\nC) Presence of chloroplasts\nD) Ability to reproduce asexually",
+        "answer": "B"
     },
     {
         "quarter": 4,
         "quizType": "Multiple Choice",
         "difficulty": "Hard",
         "diffNumber": 5,
-        "question": "",
-        "options":"A) \nB) \nC) \nD) ",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 1,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 8,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 1,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 9,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 1,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 10,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 1,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 2,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 3,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 4,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 5,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 6,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 7,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 8,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 9,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 2,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 10,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 1,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 2,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 3,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 4,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 5,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 6,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 7,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 8,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 9,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 3,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 10,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 1,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 2,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 3,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 4,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 5,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 6,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 7,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 8,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 9,
-        "question": "",
-        "answer": "",
-        "explanation": ""
-    },
-    {
-        "quarter": 4,
-        "quizType": "Multiple Choice",
-        "difficulty": "Hard",
-        "diffNumber": 10,
-        "question": "",
-        "answer": "",
-        "explanation": ""
+        "question": "Which ecological concept best explains the cycling of nutrients such as carbon and nitrogen through ecosystems?",
+        "options":"A) Energy flow\nB) Trophic levels\nC) Biogeochemical cycles\nD) Carrying capacity",
+        "answer": "C"
     }
 ]
