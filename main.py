@@ -1,3 +1,4 @@
+# Standard libraries used for timing, randomness, file handling, and data storage
 import time
 import random
 import json
@@ -5,8 +6,12 @@ import csv
 import os
 from datetime import datetime
 
-def save_score(name, quizChoice, score, tutor):
+# ===================================================================================================================
+# Saves quiz results into a CSV file for achievement tracking
+def saveScore(name, quizChoice, score, tutor):
     today = str(datetime.now().date())
+
+    # Maps stored IDs to readable names
     tutorNames = {
         "1": "Regina",
         "2": "Rodrick",
@@ -17,14 +22,17 @@ def save_score(name, quizChoice, score, tutor):
         "2": "Multiple Choice"
     }
 
+    # Check if file exists to determine whether headers should be written
     file_exists = os.path.isfile("achievements.csv")
 
     with open("achievements.csv", "a", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["date", "name", "quiz", "score", "tutor"])
 
+        # Write header only for a new file
         if not file_exists:
             writer.writeheader()
 
+        # Save one quiz attempt
         writer.writerow({
             "date": today,
             "name": name,
@@ -33,10 +41,10 @@ def save_score(name, quizChoice, score, tutor):
             "tutor": tutorNames[tutor]
         })
 
+# ===================================================================================================================
 try:
-    # READING from the file
+    # Load quiz data from JSON files (different difficulty levels and formats)
     with open("easyQuestionsMP.json", 'r', encoding="utf-8") as file:
-        # Load the JSON data from the file
         easyMP = json.load(file)
 
     with open("hardQuestionsMP.json", 'r', encoding="utf-8") as file:
@@ -51,20 +59,27 @@ try:
     with open("dialogue.json", 'r', encoding="utf-8") as file:
         dialogue = json.load(file)
 
-
+# ===================================================================================================================
+# Handles tutor selection and player identity setup
     def tutorSelection():
         refusalCount = 0
+
+        # Initial system greeting
         time.sleep(1)
         print(" | System: Hi there...")
         time.sleep(1)
         print(" | System: Sorry, may I ask what I should call you by?")
         time.sleep(0.5)
+        
         name = input(" | Enter your nickname: ")
+        
         time.sleep(1)
         print(f" | System: Nice name, {name}!")
         time.sleep(1)
         print(" | System: Now, please choose your tutor:")
         time.sleep(1)
+
+        # Tutor selection menu
         print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
         print(" " * 60, "| 1. Regina                         |")
@@ -78,9 +93,12 @@ try:
         print(" " * 60, "-------------------------------------")
         time.sleep(1)
         tutor = input(" | Who do you prefer? (1-4): ")
-        while tutor not in ["1", "2", "3", "4"]:
+        
+        while tutor not in ["1", "2", "3", "4"]: # Input Validation
             tutor = input(" | Please enter a valid input: ")
         time.sleep(1)
+
+        # Simple feedback based on selection
         if tutor == "1":
             print(" | System: Regina? Well, we won't judge")
         elif tutor == "2":
@@ -89,8 +107,11 @@ try:
             print(" | System: Woah, haven't heard that name in a while...")
         time.sleep(1)
 
+        # Normal valid tutors
         if tutor in ["1", "2", "3"]:
             return tutor, name
+
+        # Special case: user tries selecting "System"
         else:
             while True:
                 if refusalCount == 0:
@@ -114,20 +135,26 @@ try:
                         return tutor, name
                     else:
                         continue
+
+                # Auto-assign tutor after repeated invalid attempts
                 elif refusalCount == 1:
                     time.sleep(1)
                     tutor = str(random.choice(["1", "2", "3"]))
                     print(" | System: You know what? I'll choose for you.")
                     time.sleep(1)
                     return tutor, name
+
                 else:
                     time.sleep(1)
                     tutor = str(random.choice(["1", "2", "3"]))
                     print(" | System: Trying this again? Give me a break.")
                     return tutor, name
 
+# ===================================================================================================================
+# Displays and handles main menu navigation
     def mainMenu():
         while True:
+            # Main Menu ASCII Art
             time.sleep(1)
             print("\n                                                ", "=" * 65)
             time.sleep(0.25)
@@ -153,12 +180,16 @@ try:
             print("                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
             time.sleep(1)
             menuChoice = input("| What would you like to do? (1-5): ").strip()
+
+            # Validate menu input
             while menuChoice not in ["1", "2", "3", "4", "5"]:
                 menuChoice = input("\n Please Enter a valid answer: ").strip()
+
+            # Clear screen (visual spacing)
             for x in range(100):
                 print()
 
-
+            # Route user choice to correct function
             if menuChoice == "1":
                 playOption()
             elif menuChoice == "2":
@@ -170,13 +201,18 @@ try:
             else:
                 break
 
-
+# ===================================================================================================================
+# Main gameplay function (quiz system)
     def playOption():
         print()
         time.sleep(1)
         print(" " * 60, "================ PLAY ================")
+        
         tutor, name = tutorSelection()
+        
         print(" | System: Let me call them for you. In the meantime, customize your quiz so you can start immediately!\n")
+
+        # Quiz type selection
         time.sleep(0.5)
         print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
@@ -186,10 +222,13 @@ try:
         time.sleep(0.25)
         print(" " * 60, "-------------------------------------")
         time.sleep(1)
+        
         quizChoice = input(" | What quiz type do you want? (1 or 2): ").strip()
+        
         while quizChoice not in ["1", "2"]:
             quizChoice = input("\n Please Enter a valid answer ").strip()
 
+        # Quarter selection
         time.sleep(1)
         print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
@@ -203,10 +242,13 @@ try:
         time.sleep(0.25)
         print(" " * 60, "-------------------------------------")
         time.sleep(1)
+        
         quarterChoice = int(input(" | What quarter would you like to study? (1-4): ").strip())
-        while quarterChoice not in [1, 2, 3, 4]:
+        
+        while quarterChoice not in [1, 2, 3, 4]: 
             quarterChoice = int(input("\n Please Enter a valid answer ").strip())
 
+        # Difficulty selection
         time.sleep(1)
         print(" " * 60, "-------------------------------------")
         time.sleep(0.25)
@@ -218,8 +260,14 @@ try:
         time.sleep(0.25)
         print(" " * 60, "-------------------------------------")
         time.sleep(1)
+        
         diffChoice = input(" | What difficulty would you like to answer? (1 or 2): ").strip()
+        
+        while diffChoice not in ["1", "2", "3", "4"]: 
+            diffChoice = \input("\n Please Enter a valid answer ").strip())\
         time.sleep(1)
+
+        # Assign question set
         if diffChoice == "1" and quizChoice == "1":
             questions = easyID
         elif diffChoice == "1" and quizChoice == "2":
@@ -230,7 +278,9 @@ try:
             questions = hardMP
 
 # ===================================================================================================================
-# Run Quiz
+# QUIZ ENGINE (handles question flow, scoring, and early exit system)
+        
+        # Game control variables
         cont = "Y"
         gameEnd = "======================================================================== GAME END ========================================================================"
         tutorNames = {
@@ -239,44 +289,55 @@ try:
             "3": "Julien"
         }
 
+        # Display tutor-specific intro dialogue before quiz starts
         for line in dialogue[tutorNames[tutor]]["intro"]:
             print(line)
 
         time.sleep(2.5)
 
-        if cont == "Y":  # Checks if player chose to continue
+        # Only runs quiz if user chose to continue
+        if cont == "Y": 
+            
+            # Tracks Progress
             askedIndices = 0
             score = 0
+
+            # Filter questions based on selected quarter (curriculum-based grouping)
             filtered_questions = [
                 q for q in questions
                 if q["quarter"] == quarterChoice
             ]
 
+            # Safety check: prevents crash if no matching questions exist
             if not filtered_questions:
                 print("No questions found for this quarter.")
                 return
 
-            while askedIndices < 5:  # Will check if the maximum amount of questions have already been asked
+            # Main quiz loop (max 5 questions)
+            while askedIndices < 5: 
+                
                 q = filtered_questions[askedIndices]
 
-                # Tells player what question they are on
+                # Display progress indicator
                 time.sleep(1.5)
                 print("\n" + " " * 60, "=" * 30)
                 print(" " * 60, f"=           {askedIndices + 1} of 5           =")
                 print(" " * 60, "=" * 30)
 
-                # Displays question
+                # Show question prompt
                 time.sleep(1.5)
                 print("-" * 100)
                 print(q["question"])
                 print("-" * 100)
                 time.sleep(1.5)
 
+                # Show multiple choice options only if needed
                 if quizChoice == "2":
                     print(q["options"])
 
-                # Input Validation
-                print("=" * 36)
+                print("=" * 36) # Border
+
+                # Collect user answer with validation based on quiz type
                 if quizChoice == "2":
                     userAnswer = input(">>> Please enter your answer (A/B/C/D): ").upper().strip()
                     while userAnswer not in ["A", "B", "C", "D"]:
@@ -284,7 +345,7 @@ try:
                 else:
                     userAnswer = input(">>> Enter your answer: ").strip().capitalize()
 
-                # Checks if users answer is correct or not
+                # Check correctness of answer
                 if userAnswer == q["answer"]:
                     print(dialogue[tutorNames[tutor]]["correct"])
                     score += 1
@@ -293,30 +354,38 @@ try:
                 time.sleep(1)
                 print("\n>>> Answer: ", q["answer"])
                 time.sleep(2)
-                askedIndices += 1 # Adds one to the variable to show one question has already been answered
+                
+                askedIndices += 1 # Move to next question
 
-                # Asks player if they want to continue
-                if askedIndices < 5:  # Checks if the amount of asked questions is lesser than questions per era
+                # Early exit option (user-controlled pacing)
+                if askedIndices < 5:
                     print("=" * 33)
                     cont = input(dialogue[tutorNames[tutor]]["continue"]).upper().strip()
+
+                    # Validate continue input
                     while cont not in ["Y", "N"]:  # Input Validation
                         cont = input("Invalid input. Do you want to continue? (Y/N): ").upper().strip()
+                        
                     if cont == "N":  # If player chose to not continue
                         print(dialogue[tutorNames[tutor]]["no"])
                         time.sleep(1.5)
                         print(gameEnd, "\n")
-                        break  # Terminates loop
-                    else:
+                        break  p
+                    else: # If player chooses to continue
                         print(dialogue[tutorNames[tutor]]["yes"])
-                        continue  # Stops the while loop but continues the for loop
+                        continue 
 
-                # Outcome of round
-                if askedIndices == 5:
+                # Final result display after quiz ends
+                if askedIndices == 5: # Checks if asked questions is equivalent to the maximum questions
                     print("\n" + "-" * 150)  # Border
                     time.sleep(1.5)
+                    
                     print(f" | System: Your score is {score} out of 5-")  # Displays score
                     time.sleep(0.25)
+
+                    # Ending dialogue depends on performance
                     print(dialogue[tutorNames[tutor]]["final"][score])
+                    
                     time.sleep(1.5)
                     print("\n | System: Well you two have certainly gotten close.")
                     time.sleep(1)
@@ -325,15 +394,22 @@ try:
                     print(" | System: That's enough for now.")
                     time.sleep(1)
                     print(" | System: See you soon!")
-                    input("Press Enter to go to menu")  # Provides a brief period of time for players to read/reflect
-                    save_score(name, quizChoice, score, tutor)
+                    input("Press Enter to go to menu")  
+
+                    # Save results for achievement tracking
+                    saveScore(name, quizChoice, score, tutor)
+                    
                     time.sleep(0.5)
+
+                    # Screen clear effect
                     for x in range(50):
                         print()
                     return
         else:
             return
 
+# ===================================================================================================================
+# Instructions screen (explains how the system works)
     def instructionsOption():
         print("\n", " " * 60, " ============= INSTRUCTIONS ============")
         print(" | BioQuest is a program that aims to make Biology fun! Whether homework, reviews, or big tests, BioQuest is here to help!")
@@ -353,7 +429,8 @@ try:
 
         print("\n" + "-" * 221, "\n")
 
-
+# ===================================================================================================================
+# Achievement viewer (reads stored quiz results from CSV)
     def achievementsOption():
         print("\n", " " * 60, " ============= ACHIEVEMENTS ============")
         scores = []
@@ -363,8 +440,11 @@ try:
             with open("achievements.csv", "r") as f:
                 reader = csv.DictReader(f)
 
+                # Read and display each stored attempt
                 for i, row in enumerate(reader, start=1):
-                    if not row["score"]:  # Skip empty/broken rows
+
+                    # Skip invalid rows
+                    if not row["score"]: 
                         continue
 
                     hasData = True
@@ -375,9 +455,11 @@ try:
                     print("\n=== Achievement Log ===")
                     print(f">>> [{i}] {row['date']} | {row['name']} | {row['quiz']} | {score}/5 | {row['tutor']}")
 
+            # If no data exists yet
             if not hasData:
                 print(" | No achievements yet. Play a quiz first!")
 
+            # Performance summary
             elif scores:
                 avg = sum(scores) / len(scores) * 100
                 print(f"\nAverage Score: {avg:.2f}%")
@@ -390,7 +472,8 @@ try:
 
         print("\n" + "-" * 221, "\n")
 
-
+# ===================================================================================================================
+# Credits screen (project contributors)
     def creditsOption():
         print("\n", " " * 60, " =============== CREDITS ===============")
         print(" |      Program     ")
@@ -409,17 +492,23 @@ try:
 
         print("\n" + "-" * 221, "\n")
 
+# ===================================================================================================================
+# PROGRAM START (welcome screen + entry point)
+    
     print("=" * 72, "BIOQUEST", "=" * 72)
-    # Welcome Statement
+    
     time.sleep(3)
     print(" | Hi! and welcome to...")
     time.sleep(3)
+    # ASCII Title Banner
     print("                                                           _____  _       _____                 _   ")
     print("                                                          | ___ )(_)_____| _   |_   _  ___  ___| |_ ")
     print("                                                          |  _  || |  _  | | | | | | |/ _ |/ __| __|")
     print("                                                          | |_) || | (_) | |_| | |_| |  __||__ | |_ ")
     print("                                                          |_____)|_|_____|___(_|_____|____||___|___|")
+    
     time.sleep(2)
+    
     print("\n | This is a quizzer, wherein you try your best to answer a series of questions correctly.")
     time.sleep(2)
     print(" | Make sure to have fun!")
@@ -429,6 +518,7 @@ try:
     print(" | Anyways, enjoy!")
     mainMenu()
 
+# ===================================================================================================================
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
