@@ -22,7 +22,7 @@ Identification
 Take the quiz at your own pace. Tutors will guide you with hints, explanations, and encouragement.
 
 6. Track Your Progress
-Your results are saved day by day and automatically transferred to Google Sheets, so you can monitor improvements over time.
+Your results are saved day by day and automatically saved to a CSV, so you can monitor improvements over time.
 
 ## Features
 
