@@ -264,7 +264,7 @@ try:
         diffChoice = input(" | What difficulty would you like to answer? (1 or 2): ").strip()
         
         while diffChoice not in ["1", "2", "3", "4"]: 
-            diffChoice = \input("\n Please Enter a valid answer ").strip())\
+            diffChoice = input("\n Please Enter a valid answer ").strip()
         time.sleep(1)
 
         # Assign question set
@@ -370,7 +370,7 @@ try:
                         print(dialogue[tutorNames[tutor]]["no"])
                         time.sleep(1.5)
                         print(gameEnd, "\n")
-                        break  p
+                        break
                     else: # If player chooses to continue
                         print(dialogue[tutorNames[tutor]]["yes"])
                         continue 
