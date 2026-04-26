@@ -311,7 +311,7 @@ try:
 
         # Display tutor-specific intro dialogue before quiz starts
         for line in dialogue[tutorNames[tutor]]["intro"]:
-        print(line.format(name=name))
+            print(line.format(name=name))
 
         time.sleep(2.5)
 
@@ -451,7 +451,7 @@ try:
 
 # ===================================================================================================================
 # Achievement viewer (reads stored quiz results from CSV)
-     achievementNames = {
+    achievementNames = {
         "bio_godz": "Biology Godz (5/5 Score)",
         "smart_cookie": "Smart Cookie (90% Avg)",
         "first_blood": "First Blood",
@@ -490,7 +490,7 @@ try:
                 print(" | No achievements yet. Play a quiz first!")
 
             # Performance summary
-                        elif scores:
+            elif scores:
                 avg = sum(scores) / len(scores) * 100
                 total_attempts = len(scores)
 
